@@ -41,6 +41,7 @@ const organizationSchema = {
 };
 
 export const metadata = {
+  metadataBase: new URL('https://www.tuwatranslations.com'),
   title: "TUWA Qatar | #1 Company Formation, PRO Services & Legal Translation Doha",
   description: "Accelerate your business in Qatar with TUWA. Expert Company Formation Qatar, Legal Translation services Qatar, Debt clearance, PRO services, Hukoomi services, and Certificate Attestation Qatar. Trusted by 500+ global enterprises.",
   keywords: "Company formation qatar, Translation services qatar, Debt clearance qatar, Pro services qatar, Hukoomi services qatar, Certificate Attestation Qatar, Business setup Doha, Qatar company registration, PRO services Doha, Legal translation Doha",

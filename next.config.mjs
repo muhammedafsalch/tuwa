@@ -33,11 +33,6 @@ const nextConfig = {
           },
       ],
     },
-    experimental: {
-      allowedDevOrigins: [
-        'https://3000-idx-lexora-1746331604745.cluster-zumahodzirciuujpqvsniawo3o.cloudworkstations.dev',
-      ],
-    },
   };
   
   export default nextConfig;
