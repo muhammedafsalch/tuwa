@@ -85,7 +85,7 @@ const About = () => {
               <div className="absolute bottom-12 left-12 right-12">
                 <div className="glass-dark p-10 rounded-[3rem] border border-white/10 backdrop-blur-xl">
                    <p className="text-white text-2xl font-black uppercase tracking-tight leading-tight mb-4">
-                     "Your success is our strategic priority."
+                     &quot;Your success is our strategic priority.&quot;
                    </p>
                    <div className="flex items-center gap-5">
                       <div className="w-12 h-12 rounded-2xl bg-secondary flex items-center justify-center text-primary font-black">TTS</div>

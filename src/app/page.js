@@ -212,7 +212,7 @@ const Testimonials = () => {
                 <div className="flex gap-1 mb-6">
                   {[...Array(rev.rating)].map((_, i) => <Star key={i} className="w-5 h-5 fill-secondary text-secondary" />)}
                 </div>
-                <p className="text-gray-300 text-lg mb-8 leading-relaxed italic">"{rev.text}"</p>
+                <p className="text-gray-300 text-lg mb-8 leading-relaxed italic">&quot;{rev.text}&quot;</p>
                 <div>
                   <p className="text-white font-black uppercase tracking-tight text-xl">{rev.name}</p>
                   <p className="text-secondary text-sm font-bold uppercase tracking-widest">{rev.role}</p>
@@ -424,7 +424,7 @@ export default function Home() {
                     <div className="absolute bottom-12 left-12 right-12">
                       <div className="glass-dark p-10 rounded-[3rem] border-white/10">
                         <p className="text-white text-2xl font-black uppercase tracking-tight leading-relaxed">
-                          "TUWA is the catalyst for business transformation in Qatar."
+                          &quot;TUWA is the catalyst for business transformation in Qatar.&quot;
                         </p>
                         <div className="mt-8 flex items-center gap-6">
                            <div className="w-14 h-14 rounded-2xl bg-secondary flex items-center justify-center text-primary font-black">TTS</div>
