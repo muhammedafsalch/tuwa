@@ -37,7 +37,11 @@ const organizationSchema = {
     "telephone": "+974 7732 3214",
     "email": "tuwatranslations@gmail.com",
     "contactType": "customer service"
-  }
+  },
+  "sameAs": [
+    "https://www.facebook.com/share/18jKzVfiWK/?mibextid=wwXIfr",
+    "https://www.instagram.com/tuwa.translations?igsh=ajBjc2Y3NTkyNWNy&utm_source=qr"
+  ]
 };
 
 export const metadata = {
@@ -70,6 +74,9 @@ export const metadata = {
   alternates: {
     canonical: "https://www.tuwatranslations.com",
   },
+  facebook: {
+    appId: '', // Add if available
+  }
 };
 
 

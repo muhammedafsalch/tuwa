@@ -13,7 +13,9 @@ import {
   Star,
   Quote,
   X,
-  ChevronDown
+  ChevronDown,
+  Facebook,
+  Instagram
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
@@ -354,8 +356,8 @@ export default function Home() {
       "closes": "20:00"
     },
     "sameAs": [
-      "https://www.facebook.com/tuwaqatar",
-      "https://www.instagram.com/tuwaqatar"
+      "https://www.facebook.com/share/18jKzVfiWK/?mibextid=wwXIfr",
+      "https://www.instagram.com/tuwa.translations?igsh=ajBjc2Y3NTkyNWNy&utm_source=qr"
     ],
     "description": "Leading provider of Company formation qatar, Translation services qatar, Debt clearance, PRO services, Hukoomi services, and Certificate Attestation Qatar."
   };
@@ -527,7 +529,15 @@ export default function Home() {
               <p className="mb-12 text-lg leading-relaxed text-gray-400">
                 TUWA Translation & Services is the premier business consulting firm in Qatar, empowering entrepreneurs and enterprises through expert legal and administrative solutions.
               </p>
-              <p className="text-secondary font-black uppercase tracking-widest text-sm">Powered By Tawa Trading and Services WLL</p>
+              <p className="text-secondary font-black uppercase tracking-widest text-sm mb-8">Powered By Tawa Trading and Services WLL</p>
+              <div className="flex gap-6">
+                <Link href="https://www.facebook.com/share/18jKzVfiWK/?mibextid=wwXIfr" target="_blank" className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-secondary hover:border-secondary transition-all duration-500">
+                  <Facebook className="w-6 h-6" />
+                </Link>
+                <Link href="https://www.instagram.com/tuwa.translations?igsh=ajBjc2Y3NTkyNWNy&utm_source=qr" target="_blank" className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-secondary hover:border-secondary transition-all duration-500">
+                  <Instagram className="w-6 h-6" />
+                </Link>
+              </div>
             </div>
             
             <div>

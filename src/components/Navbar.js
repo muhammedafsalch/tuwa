@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, MessageSquare, ChevronRight, MapPin, Mail } from 'lucide-react';
+import { Menu, X, Phone, MessageSquare, ChevronRight, MapPin, Mail, Facebook, Instagram } from 'lucide-react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -131,6 +131,14 @@ const Navbar = () => {
                       </div>
                       <span className="font-black text-xl">+974 7732 3214</span>
                     </a>
+                    <div className="flex gap-4 pt-4">
+                      <Link href="https://www.facebook.com/share/18jKzVfiWK/?mibextid=wwXIfr" target="_blank" className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-secondary">
+                        <Facebook className="w-6 h-6" />
+                      </Link>
+                      <Link href="https://www.instagram.com/tuwa.translations?igsh=ajBjc2Y3NTkyNWNy&utm_source=qr" target="_blank" className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-secondary">
+                        <Instagram className="w-6 h-6" />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
