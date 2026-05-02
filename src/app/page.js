@@ -527,7 +527,7 @@ export default function Home() {
               <p className="mb-12 text-lg leading-relaxed text-gray-400">
                 TUWA Translation & Services is the premier business consulting firm in Qatar, empowering entrepreneurs and enterprises through expert legal and administrative solutions.
               </p>
-              <p className="text-secondary font-black uppercase tracking-widest text-sm">Powered By Tawa Trading and Contracting</p>
+              <p className="text-secondary font-black uppercase tracking-widest text-sm">Powered By Tawa Trading and Services WLL</p>
             </div>
             
             <div>
