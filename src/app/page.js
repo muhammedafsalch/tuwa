@@ -497,7 +497,7 @@ export default function Home() {
                 <FadeIn>
                   <h2 className="text-4xl md:text-8xl font-black text-white mb-10 leading-[1] uppercase tracking-tighter">Ready for <br /> <span className="text-secondary">Expansion?</span></h2>
                   <p className="text-xl md:text-2xl text-gray-400 mb-16 max-w-2xl mx-auto font-medium leading-relaxed">
-                    Schedule a private consultation with our senior consultants today and take the first step towards a compliant and successful business launch in Doha.
+                    Connect with our corporate specialists today and take the first step towards a compliant and successful business launch in Doha.
                   </p>
                   
                   <div className="flex flex-col sm:flex-row justify-center gap-8">
@@ -505,7 +505,7 @@ export default function Home() {
                       onClick={handleWhatsAppChat}
                       className="bg-secondary hover:bg-secondary-hover text-primary px-12 py-6 rounded-3xl font-black transition-all shadow-premium hover:shadow-premium-hover flex items-center justify-center gap-4 text-xl uppercase tracking-widest"
                     >
-                       WhatsApp Consulting
+                       WhatsApp Support
                     </button>
                     <a 
                       href="tel:+97477323214"
@@ -527,7 +527,7 @@ export default function Home() {
             <div className="col-span-1 md:col-span-2 lg:col-span-1">
               <Image src="/tuwa logo png-01.png" alt="TUWA Logo" width={220} height={80} className="mb-10 brightness-0 invert object-contain" />
               <p className="mb-12 text-lg leading-relaxed text-gray-400">
-                TUWA Translation & Services is the premier business consulting firm in Qatar, empowering entrepreneurs and enterprises through expert legal and administrative solutions.
+                TUWA Translation & Services is the premier corporate service provider in Qatar, empowering entrepreneurs and enterprises through expert legal and administrative solutions.
               </p>
               <p className="text-secondary font-black uppercase tracking-widest text-sm mb-8">Powered By Tawa Trading and Services WLL</p>
               <div className="flex gap-6">
@@ -555,7 +555,7 @@ export default function Home() {
               <ul className="space-y-6 text-lg font-bold">
                 <li><Link href="#about" className="hover:text-white transition-colors uppercase tracking-tight">Why TUWA?</Link></li>
                 <li><Link href="#steps" className="hover:text-white transition-colors uppercase tracking-tight">Our Process</Link></li>
-                <li><Link href="#contact" className="hover:text-white transition-colors uppercase tracking-tight">Consultation</Link></li>
+                <li><Link href="#contact" className="hover:text-white transition-colors uppercase tracking-tight">Connect Now</Link></li>
               </ul>
             </div>
 

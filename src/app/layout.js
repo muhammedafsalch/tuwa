@@ -25,7 +25,7 @@ const organizationSchema = {
   "name": "TUWA Translation and Services",
   "url": "https://www.tuwatranslations.com",
   "logo": "https://www.tuwatranslations.com/tuwa%20logo%20png-01.png",
-  "description": "Premium Business Consulting in Qatar. Expert company formation, legal translation, PRO services, and debt clearance.",
+  "description": "Premium Corporate Services in Qatar. Expert debt clearance, company formation, legal translation, and PRO services.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Matar Qadeem",
@@ -46,12 +46,12 @@ const organizationSchema = {
 
 export const metadata = {
   metadataBase: new URL('https://www.tuwatranslations.com'),
-  title: "TUWA Qatar | #1 Company Formation, PRO Services & Legal Translation Doha",
-  description: "Accelerate your business in Qatar with TUWA. Expert Company Formation Qatar, Legal Translation services Qatar, Debt clearance, PRO services, Hukoomi services, and Certificate Attestation Qatar. Trusted by 500+ global enterprises.",
-  keywords: "Company formation qatar, Translation services qatar, Debt clearance qatar, Pro services qatar, Hukoomi services qatar, Certificate Attestation Qatar, Business setup Doha, Qatar company registration, PRO services Doha, Legal translation Doha",
+  title: "TUWA Qatar | #1 Debt Clearance, Company Formation & PRO Services Doha",
+  description: "Accelerate your business in Qatar with TUWA. Expert Debt clearance, Company Formation Qatar, Legal Translation services Qatar, PRO services, Hukoomi services, and Certificate Attestation Qatar. Trusted by 500+ global enterprises.",
+  keywords: "Debt clearance qatar, Company formation qatar, Translation services qatar, Pro services qatar, Hukoomi services qatar, Certificate Attestation Qatar, Business setup Doha, Qatar company registration, PRO services Doha, Legal translation Doha",
   openGraph: {
-    title: "TUWA Qatar | Premium Business Consulting & PRO Services",
-    description: "The premier partner for company formation and legal translation in Qatar. Empowering international enterprises with elite corporate solutions.",
+    title: "TUWA Qatar | Premium Corporate Services & PRO Partners",
+    description: "The premier partner for debt clearance, company formation, and legal translation in Qatar. Empowering international enterprises with elite corporate solutions.",
     url: "https://www.tuwatranslations.com",
     siteName: "TUWA Business Services",
     images: [
@@ -73,6 +73,17 @@ export const metadata = {
   },
   alternates: {
     canonical: "https://www.tuwatranslations.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
   facebook: {
     appId: '', // Add if available

@@ -16,9 +16,15 @@ import Link from 'next/link';
 
 const services = [
   {
-    title: 'Typing Works',
-    icon: <FileSpreadsheet className="w-8 h-8" />,
-    desc: 'Professional document preparation and typing services for all official Qatar ministry requirements.',
+    title: 'Debt clearance qatar',
+    icon: <BadgeCheck className="w-8 h-8" />,
+    desc: 'Strategic financial and legal support for debt settlement, bank clearances, and commercial liability resolution.',
+    color: 'bg-primary'
+  },
+  {
+    title: 'Company formation qatar',
+    icon: <BriefcaseBusiness className="w-8 h-8" />,
+    desc: 'Seamless business setup, LLC formation, and commercial license acquisition in Doha.',
     color: 'bg-primary'
   },
   {
@@ -52,15 +58,9 @@ const services = [
     color: 'bg-primary'
   },
   {
-    title: 'Company formation qatar',
-    icon: <BriefcaseBusiness className="w-8 h-8" />,
-    desc: 'Seamless business setup, LLC formation, and commercial license acquisition in Doha.',
-    color: 'bg-primary'
-  },
-  {
-    title: 'Debt clearance qatar',
-    icon: <BadgeCheck className="w-8 h-8" />,
-    desc: 'Strategic financial and legal support for debt settlement and commercial clearances.',
+    title: 'Typing Works',
+    icon: <FileSpreadsheet className="w-8 h-8" />,
+    desc: 'Professional document preparation and typing services for all official Qatar ministry requirements.',
     color: 'bg-primary'
   },
 ];
@@ -91,7 +91,7 @@ const Services = () => {
               Elite Corporate <br /> <span className="text-secondary">Solutions</span>
             </h3>
             <p className="text-lg sm:text-xl text-gray-400 leading-relaxed">
-              We provide comprehensive support for every stage of your business journey, specializing in <strong>Company formation qatar</strong>, <strong>Translation services qatar</strong>, and <strong>Pro services qatar</strong>.
+              We provide comprehensive support for every stage of your business journey, specializing in <strong>Company formation qatar</strong>, <strong>Translation services qatar</strong>, <strong>Debt clearance services</strong>, and <strong>Pro services qatar</strong>.
             </p>
 
           </FadeIn>

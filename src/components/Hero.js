@@ -50,7 +50,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-3xl text-gray-400 font-bold mb-16 tracking-tight max-w-3xl mx-auto leading-relaxed">
-            Empowering global enterprises with premium <strong>Company formation qatar</strong> and elite <strong>Pro services qatar</strong>.
+            Empowering global enterprises with premium <strong>Company formation qatar</strong>, <strong>Debt clearance services</strong>, and elite <strong>Pro services qatar</strong>.
           </p>
 
 
@@ -59,7 +59,7 @@ const Hero = () => {
               onClick={handleWhatsAppChat}
               className="w-full sm:w-auto bg-secondary hover:bg-secondary-hover text-primary px-16 py-6 rounded-[2rem] font-black transition-all duration-500 shadow-premium hover:shadow-premium-hover transform hover:-translate-y-2 flex items-center justify-center gap-4 text-2xl uppercase tracking-widest"
             >
-              Start Consultation
+              Get Started
             </button>
           </div>
         </motion.div>
@@ -70,7 +70,7 @@ const Hero = () => {
           {[
             { title: 'Stress Free Licensing', icon: <CheckCircle2 className="w-6 h-6 text-secondary" /> },
             { title: 'Streamlined Operations', icon: <CheckCircle2 className="w-6 h-6 text-secondary" /> },
-            { title: 'Professional Consultation', icon: <CheckCircle2 className="w-6 h-6 text-secondary" /> },
+            { title: 'Professional Support', icon: <CheckCircle2 className="w-6 h-6 text-secondary" /> },
           ].map((item, i) => (
             <motion.div
               key={i}

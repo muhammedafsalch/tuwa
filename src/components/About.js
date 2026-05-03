@@ -9,7 +9,7 @@ const About = () => {
     { label: 'Years Experience', value: '10+', icon: <Award className="w-6 h-6" /> },
     { label: 'Successful Setups', value: '500+', icon: <Users className="w-6 h-6" /> },
     { label: 'Client Retention', value: '98%', icon: <Target className="w-6 h-6" /> },
-    { label: 'Expert Consultants', value: '25+', icon: <Eye className="w-6 h-6" /> },
+    { label: 'Expert Partners', value: '25+', icon: <Eye className="w-6 h-6" /> },
   ];
 
   return (
@@ -30,7 +30,7 @@ const About = () => {
                 Driving Business <br /> <span className="text-secondary">Growth in Qatar</span>
               </h3>
               <p className="text-xl text-gray-400 mb-10 leading-relaxed font-medium">
-                TUWA Business Services is a premier corporate consultancy firm based in Doha, Qatar. We specialize in empowering international investors and local entrepreneurs by providing seamless <strong>Company formation qatar</strong>, elite <strong>Pro services qatar</strong>, and certified <strong>Translation services qatar</strong>.
+                TUWA Business Services is a premier corporate service provider and strategic partner based in Doha, Qatar. We specialize in empowering international investors and local entrepreneurs by providing seamless <strong>Company formation qatar</strong>, elite <strong>Pro services qatar</strong>, and certified <strong>Translation services qatar</strong>.
               </p>
 
               
