@@ -1,5 +1,7 @@
+export const dynamic = 'force-static';
+
 export default function sitemap() {
-  const baseUrl = 'https://www.tuwatranslations.com';
+  const baseUrl = 'https://tuwabusiness.com';
 
   return [
     {

@@ -3,10 +3,10 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { 
-  CheckCircle2, 
-  PhoneCall, 
-  MapPin, 
+import {
+  CheckCircle2,
+  PhoneCall,
+  MapPin,
   ChevronRight,
   MessageSquare,
   HelpCircle,
@@ -15,7 +15,8 @@ import {
   X,
   ChevronDown,
   Facebook,
-  Instagram
+  Instagram,
+  ArrowUpRight
 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
@@ -30,8 +31,8 @@ import WhatsAppChat from '@/components/WhatsAppChat';
 
 const FadeIn = ({ children, delay = 0, direction = 'up' }) => {
   const variants = {
-    hidden: { 
-      opacity: 0, 
+    hidden: {
+      opacity: 0,
       y: direction === 'up' ? 40 : direction === 'down' ? -40 : 0,
       x: direction === 'left' ? 40 : direction === 'right' ? -40 : 0,
     },
@@ -96,14 +97,14 @@ const Posters = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {posters.map((poster, idx) => (
             <FadeIn key={poster.id} delay={idx * 0.05}>
-              <div 
+              <div
                 onClick={() => setSelectedPoster(poster)}
                 className="group relative rounded-3xl overflow-hidden bg-white/5 border border-white/10 hover:border-secondary transition-soft aspect-[3/4] cursor-zoom-in"
               >
-                <Image 
-                  src={`/posters/${poster.id}.jpeg`} 
-                  alt={poster.title} 
-                  fill 
+                <Image
+                  src={`/posters/${poster.id}.jpeg`}
+                  alt={poster.title}
+                  fill
                   className="object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-60 group-hover:opacity-90 transition-opacity"></div>
@@ -127,20 +128,20 @@ const Posters = () => {
             className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-20 overflow-hidden"
           >
             {/* Darker Solid Background Overlay */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.3 }}
               onClick={() => setSelectedPoster(null)}
-              className="absolute inset-0 bg-black/55 backdrop-blur-sm cursor-zoom-out" 
+              className="absolute inset-0 bg-black/55 backdrop-blur-sm cursor-zoom-out"
             />
-            
+
             {/* Main Content Container */}
             <div className="relative z-10 w-full max-w-4xl h-full flex flex-col items-center justify-center">
-              
+
               {/* Close Button (Clearly Outside on Desktop) */}
-              <motion.button 
+              <motion.button
                 initial={{ opacity: 0, scale: 0.5, rotate: -45 }}
                 animate={{ opacity: 1, scale: 1, rotate: 0 }}
                 exit={{ opacity: 0, scale: 0.5, rotate: -45 }}
@@ -150,7 +151,7 @@ const Posters = () => {
               >
                 <X className="w-6 h-6 md:w-8 md:h-8" />
               </motion.button>
-              
+
               {/* Image Container (Fit on Screen) */}
               <motion.div
                 initial={{ scale: 0.9, opacity: 0 }}
@@ -159,17 +160,17 @@ const Posters = () => {
                 transition={{ duration: 0.4, ease: "easeOut" }}
                 className="relative w-full h-full max-h-[75vh]  md:max-h-[80vh] rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-black/40"
               >
-                <Image 
-                  src={`/posters/${selectedPoster.id}.jpeg`} 
-                  alt={selectedPoster.title} 
-                  fill 
+                <Image
+                  src={`/posters/${selectedPoster.id}.jpeg`}
+                  alt={selectedPoster.title}
+                  fill
                   className="object-contain"
                   priority
                 />
               </motion.div>
-              
+
               {/* Text Info */}
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 10 }}
@@ -232,29 +233,29 @@ const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const faqs = [
-    { 
-      q: 'How long does company formation in Qatar take?', 
-      a: 'Typically, business setup in Qatar takes 2-4 weeks depending on the license type and ministry approvals. Our team accelerates this for <strong>Company formation qatar</strong> by handling all bureaucracy upfront.' 
+    {
+      q: 'How long does company formation in Qatar take?',
+      a: 'Typically, business setup in Qatar takes 2-4 weeks depending on the license type and ministry approvals. Our team accelerates this for <strong>Company formation qatar</strong> by handling all bureaucracy upfront.'
     },
-    { 
-      q: 'What is required for legal translation in Doha?', 
-      a: 'We require the original document and identity proofs. Our <strong>Translation services qatar</strong> are court-certified and accepted by all Qatari ministries and embassies.' 
+    {
+      q: 'What is required for legal translation in Doha?',
+      a: 'We require the original document and identity proofs. Our <strong>Translation services qatar</strong> are court-certified and accepted by all Qatari ministries and embassies.'
     },
-    { 
-      q: 'Can you handle debt clearance for foreign entities?', 
-      a: 'Yes, our <strong>Debt clearance qatar</strong> team specializing in commercial advocacy handles complex financial settlements for international firms and local entities.' 
+    {
+      q: 'Can you handle debt clearance for foreign entities?',
+      a: 'Yes, our <strong>Debt clearance qatar</strong> team specializing in commercial advocacy handles complex financial settlements for international firms and local entities.'
     },
-    { 
-      q: 'Do you offer online Hukoomi portal support?', 
-      a: 'Absolutely. We manage all <strong>Hukoomi services qatar</strong>, including e-government applications, portal registrations, and digital document filings for Traffic & MOI.' 
+    {
+      q: 'Do you offer online Hukoomi portal support?',
+      a: 'Absolutely. We manage all <strong>Hukoomi services qatar</strong>, including e-government applications, portal registrations, and digital document filings for Traffic & MOI.'
     },
-    { 
-      q: 'What are the benefits of using Pro services qatar?', 
-      a: 'Using professional <strong>Pro services qatar</strong> ensures compliance with labor laws, faster visa processing, and avoids costly penalties for document delays.' 
+    {
+      q: 'What are the benefits of using Pro services qatar?',
+      a: 'Using professional <strong>Pro services qatar</strong> ensures compliance with labor laws, faster visa processing, and avoids costly penalties for document delays.'
     },
-    { 
-      q: 'How does Certificate Attestation Qatar work?', 
-      a: 'Our <strong>Certificate Attestation Qatar</strong> service covers educational, marriage, and birth certificates, managing the process from MOFA to embassy approvals.' 
+    {
+      q: 'How does Certificate Attestation Qatar work?',
+      a: 'Our <strong>Certificate Attestation Qatar</strong> service covers educational, marriage, and birth certificates, managing the process from MOFA to embassy approvals.'
     },
   ];
 
@@ -270,12 +271,11 @@ const FAQ = () => {
         <div className="space-y-6">
           {faqs.map((faq, idx) => (
             <FadeIn key={idx} delay={idx * 0.1}>
-              <div 
-                className={`rounded-[2.5rem] border transition-all duration-500 overflow-hidden ${
-                  activeIndex === idx ? 'bg-white/10 border-secondary shadow-2xl' : 'bg-white/5 border-white/10 hover:border-white/20'
-                }`}
+              <div
+                className={`rounded-[2.5rem] border transition-all duration-500 overflow-hidden ${activeIndex === idx ? 'bg-white/10 border-secondary shadow-2xl' : 'bg-white/5 border-white/10 hover:border-white/20'
+                  }`}
               >
-                <button 
+                <button
                   onClick={() => setActiveIndex(activeIndex === idx ? -1 : idx)}
                   className="w-full p-8 md:p-10 flex items-center justify-between text-left"
                 >
@@ -285,13 +285,12 @@ const FAQ = () => {
                       {faq.q}
                     </h4>
                   </div>
-                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-500 ${
-                    activeIndex === idx ? 'bg-secondary text-primary rotate-180' : 'bg-white/5 text-white'
-                  }`}>
+                  <div className={`w-12 h-12 rounded-2xl flex items-center justify-center transition-all duration-500 ${activeIndex === idx ? 'bg-secondary text-primary rotate-180' : 'bg-white/5 text-white'
+                    }`}>
                     <ChevronDown className="w-6 h-6" />
                   </div>
                 </button>
-                
+
                 <AnimatePresence>
                   {activeIndex === idx && (
                     <motion.div
@@ -325,10 +324,10 @@ export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "TUWA Translation & Business Services Qatar",
-    "image": "https://www.tuwatranslations.com/tuwa%20logo%20png-01.png",
-    "@id": "https://www.tuwatranslations.com",
-    "url": "https://www.tuwatranslations.com",
+    "name": "TUWA Business Services Qatar",
+    "image": "https://tuwabusiness.com/tuwa%20logo%20png-01.png",
+    "@id": "https://tuwabusiness.com",
+    "url": "https://tuwabusiness.com",
     "telephone": "+974 7732 3214",
     "address": {
       "@type": "PostalAddress",
@@ -359,7 +358,61 @@ export default function Home() {
       "https://www.facebook.com/share/18jKzVfiWK/?mibextid=wwXIfr",
       "https://www.instagram.com/tuwa.translations?igsh=ajBjc2Y3NTkyNWNy&utm_source=qr"
     ],
-    "description": "Leading provider of Company formation qatar, Translation services qatar, Debt clearance, PRO services, Hukoomi services, and Certificate Attestation Qatar."
+    "description": "Leading provider of Company formation qatar, Translation services qatar, Debt clearance qatar, PRO services qatar, Hukoomi services qatar, and Certificate Attestation Qatar.",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Corporate Services Qatar",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Company formation qatar",
+            "description": "Expert business setup and LLC formation services in Doha, Qatar."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Translation services qatar",
+            "description": "Certified legal translation services accepted by all Qatari ministries."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Debt clearance qatar",
+            "description": "Professional commercial debt settlement and legal advocacy in Qatar."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "PRO services qatar",
+            "description": "Comprehensive PRO solutions for visa processing and government relations."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hukoomi services qatar",
+            "description": "Expert assistance with the Hukoomi e-government portal applications."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Certificate Attestation Qatar",
+            "description": "Fast-track attestation for all types of official certificates in Qatar."
+          }
+        }
+      ]
+    }
   };
 
   return (
@@ -370,10 +423,10 @@ export default function Home() {
       />
       <Navbar />
 
-      
+
       <main>
         <Hero />
-        
+
         <Services />
 
         <About />
@@ -382,58 +435,58 @@ export default function Home() {
 
 
         {/* 3 Simple Steps Section */}
-        <section id="steps" className="py-24 sm:py-32 bg-primary overflow-hidden border-t border-white/5">
+        <section id="steps" className="py-16 sm:py-32 bg-primary overflow-hidden border-t border-white/5">
           <div className="max-w-7xl mx-auto px-6">
-            <div className="flex flex-col lg:flex-row items-center gap-24">
+            <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
               <div className="lg:w-1/2">
                 <FadeIn direction="right">
                   <h2 className="text-secondary font-bold tracking-[0.3em] uppercase text-sm mb-4 text-center lg:text-left">The Strategy</h2>
-                  <h3 className="text-4xl sm:text-7xl font-extrabold text-white mb-12 leading-tight uppercase tracking-tight text-center lg:text-left">
+                  <h3 className="text-3xl sm:text-5xl lg:text-7xl font-extrabold text-white mb-10 lg:mb-12 leading-tight uppercase tracking-tight text-center lg:text-left">
                     Your Path to <br /> <span className="text-secondary">Excellence</span>
                   </h3>
-                  
-                  <div className="space-y-12">
+
+                  <div className="space-y-8 lg:space-y-12">
                     {[
                       { title: 'Strategic Consultation', desc: 'We analyze your business goals to recommend the perfect legal structure for <strong>Company formation qatar</strong>.' },
                       { title: 'Documentation & Approval', desc: 'Our PRO team handles all ministry interactions, document attestation, and <strong>Hukoomi services qatar</strong>.' },
                       { title: 'Operational Launch', desc: 'Finalize your corporate bank account and begin operations with our <strong>Pro services qatar</strong>.' }
                     ].map((step, idx) => (
-                      <div key={idx} className="flex gap-10 group">
-                        <div className="shrink-0 w-20 h-20 rounded-3xl bg-white/5 text-secondary border border-white/10 flex items-center justify-center font-black text-3xl group-hover:bg-secondary group-hover:text-primary transition-all duration-500 shadow-2xl">
+                      <div key={idx} className="flex gap-6 lg:gap-10 group">
+                        <div className="shrink-0 w-14 h-14 lg:w-20 lg:h-20 rounded-2xl lg:rounded-3xl bg-white/5 text-secondary border border-white/10 flex items-center justify-center font-black text-2xl lg:text-3xl group-hover:bg-secondary group-hover:text-primary transition-all duration-500 shadow-2xl">
                           {idx + 1}
                         </div>
                         <div>
-                          <h4 className="text-2xl font-black text-white mb-4 uppercase tracking-tight">{step.title}</h4>
-                          <p className="text-gray-400 leading-relaxed text-xl" dangerouslySetInnerHTML={{ __html: step.desc }}></p>
+                          <h4 className="text-lg sm:text-xl lg:text-2xl font-black text-white mb-2 lg:mb-4 uppercase tracking-tight">{step.title}</h4>
+                          <p className="text-gray-400 leading-relaxed text-sm sm:text-base lg:text-xl" dangerouslySetInnerHTML={{ __html: step.desc }}></p>
                         </div>
                       </div>
                     ))}
                   </div>
                 </FadeIn>
               </div>
-              
+
               <div className="lg:w-1/2 w-full">
                 <FadeIn direction="left">
-                  <div className="relative rounded-[4rem] overflow-hidden shadow-premium h-[800px] w-full border-[1px] border-white/10">
-                    <Image 
-                      src="/images/qatar.jpeg" 
-                      alt="TUWA Excellence" 
-                      fill 
+                  <div className="relative rounded-[2.5rem] sm:rounded-[4rem] overflow-hidden shadow-premium h-[450px] sm:h-[800px] w-full border-[1px] border-white/10">
+                    <Image
+                      src="/images/qatar.jpeg"
+                      alt="TUWA Excellence"
+                      fill
                       className="object-cover grayscale hover:grayscale-0 transition-all duration-1000"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/20 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/40 to-transparent"></div>
 
-                    <div className="absolute bottom-12 left-12 right-12">
-                      <div className="glass-dark p-10 rounded-[3rem] border-white/10">
-                        <p className="text-white text-2xl font-black uppercase tracking-tight leading-relaxed">
+                    <div className="absolute bottom-6 left-4 right-4 sm:bottom-12 sm:left-12 sm:right-12">
+                      <div className="glass-dark p-5 sm:p-10 rounded-[1.5rem] sm:rounded-[3rem] border-white/10">
+                        <p className="text-white text-base sm:text-xl lg:text-2xl font-black uppercase tracking-tight leading-relaxed">
                           &quot;TUWA is the catalyst for business transformation in Qatar.&quot;
                         </p>
-                        <div className="mt-8 flex items-center gap-6">
-                           <div className="w-14 h-14 rounded-2xl bg-secondary flex items-center justify-center text-primary font-black">TTS</div>
-                           <div>
-                              <p className="text-white font-black uppercase tracking-widest">Global Partners</p>
-                              <p className="text-secondary text-sm font-bold uppercase tracking-[0.2em]">Strategic Excellence</p>
-                           </div>
+                        <div className="mt-6 sm:mt-8 flex items-center gap-4 sm:gap-6">
+                          <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-[1rem] sm:rounded-2xl bg-secondary flex items-center justify-center text-primary font-black text-sm sm:text-base">TTS</div>
+                          <div>
+                            <p className="text-white font-black uppercase tracking-widest text-[11px] sm:text-base">Global Partners</p>
+                            <p className="text-secondary text-[9px] sm:text-sm font-bold uppercase tracking-[0.2em]">Strategic Excellence</p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -488,28 +541,32 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section id="contact" className="py-24 sm:py-32 bg-primary relative">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="relative rounded-[4rem] p-12 md:p-24 overflow-hidden shadow-premium border border-white/5">
+        <section id="contact" className="py-20 sm:py-32 bg-primary relative">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="relative rounded-[2.5rem] sm:rounded-[4rem] p-8 sm:p-16 md:p-24 overflow-hidden shadow-premium border border-white/5">
               <div className="absolute inset-0 bg-white/5"></div>
-              
+
               <div className="relative z-10 text-center">
                 <FadeIn>
-                  <h2 className="text-4xl md:text-8xl font-black text-white mb-10 leading-[1] uppercase tracking-tighter">Ready for <br /> <span className="text-secondary">Expansion?</span></h2>
-                  <p className="text-xl md:text-2xl text-gray-400 mb-16 max-w-2xl mx-auto font-medium leading-relaxed">
+                  <h2 className="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 sm:mb-10 leading-[1.1] uppercase tracking-tighter">Ready for <br /> <span className="text-secondary">Expansion?</span></h2>
+                  <p className="text-lg sm:text-xl md:text-2xl text-gray-400 mb-12 sm:mb-16 max-w-2xl mx-auto font-medium leading-relaxed">
                     Connect with our corporate specialists today and take the first step towards a compliant and successful business launch in Doha.
                   </p>
-                  
-                  <div className="flex flex-col sm:flex-row justify-center gap-8">
-                    <button 
+
+                  <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 w-full">
+                    <button
                       onClick={handleWhatsAppChat}
-                      className="bg-secondary hover:bg-secondary-hover text-primary px-12 py-6 rounded-3xl font-black transition-all shadow-premium hover:shadow-premium-hover flex items-center justify-center gap-4 text-xl uppercase tracking-widest"
+                      className="group/wa w-full sm:w-auto bg-gradient-to-r from-[#25D366] to-[#128C7E] hover:from-[#128C7E] hover:to-[#075E54] text-white px-8 sm:px-12 py-5 sm:py-6 rounded-2xl sm:rounded-3xl font-black transition-all duration-300 shadow-premium hover:shadow-[0_15px_40px_rgba(37,211,102,0.4)] flex items-center justify-center gap-3 sm:gap-4 text-lg sm:text-xl uppercase tracking-widest active:scale-95"
                     >
-                       WhatsApp Support
+                      <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 sm:w-7 sm:h-7 shrink-0">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+                      </svg>
+                      WhatsApp Support
+                      <ArrowUpRight className="w-6 h-6 group-hover/wa:translate-x-1 group-hover/wa:-translate-y-1 transition-transform duration-300" />
                     </button>
-                    <a 
+                    <a
                       href="tel:+97477323214"
-                      className="bg-white/5 hover:bg-white/10 text-white border-2 border-white/10 px-12 py-6 rounded-3xl font-black transition-all backdrop-blur-md flex items-center justify-center gap-4 text-xl uppercase tracking-widest"
+                      className="w-full sm:w-auto bg-white/5 hover:bg-white/10 text-white border-2 border-white/10 px-8 sm:px-12 py-5 sm:py-6 rounded-2xl sm:rounded-3xl font-black transition-all backdrop-blur-md flex items-center justify-center gap-3 sm:gap-4 text-lg sm:text-xl uppercase tracking-widest active:scale-95"
                     >
                       <PhoneCall className="w-6 h-6 text-secondary" /> +974 7732 3214
                     </a>
@@ -525,7 +582,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-20 mb-24">
             <div className="col-span-1 md:col-span-2 lg:col-span-1">
-              <Image src="/tuwa logo png-01.png" alt="TUWA Logo" width={220} height={80} className="mb-10 brightness-0 invert object-contain" />
+              <Image src="/tuwa logo.png" alt="TUWA Logo" width={220} height={80} className="mb-10 brightness-0 invert object-contain" />
               <p className="mb-12 text-lg leading-relaxed text-gray-400">
                 TUWA Translation & Services is the premier corporate service provider in Qatar, empowering entrepreneurs and enterprises through expert legal and administrative solutions.
               </p>
@@ -539,7 +596,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            
+
             <div>
               <h4 className="text-white text-lg font-black mb-10 uppercase tracking-[0.2em]">Solutions</h4>
               <ul className="space-y-6 text-lg font-bold">

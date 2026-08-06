@@ -28,18 +28,17 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          isScrolled ? 'glass shadow-premium py-4' : 'bg-transparent py-8'
-        }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'shadow-premium py-4 backdrop-blur-xl bg-white/90 border-b border-gray-200/50' : 'bg-transparent py-8'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <Link href="/" className="relative z-10">
-            <Image 
-              src="/tuwa logo png-01.png" 
-              alt="TUWA Qatar - #1 Company Formation and PRO Services Doha" 
-              width={180} 
-              height={60} 
-              className={`transition-all duration-500 ${isScrolled ? '' : 'brightness-0 invert'} object-contain`} 
+            <Image
+              src="/tuwa logo.png"
+              alt="TUWA Qatar - #1 Company Formation and PRO Services Doha"
+              width={180}
+              height={60}
+              className={`transition-all duration-500 ${isScrolled ? '' : 'brightness-0 invert'} object-contain`}
             />
 
           </Link>
@@ -47,31 +46,28 @@ const Navbar = () => {
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center space-x-12">
             {navLinks.map((link) => (
-              <Link 
+              <Link
                 key={link.name}
-                href={link.href} 
-                className={`font-black text-sm uppercase tracking-[0.2em] hover:text-secondary transition-colors duration-300 ${
-                  isScrolled ? 'text-primary' : 'text-white'
-                }`}
+                href={link.href}
+                className={`font-black text-sm uppercase tracking-[0.2em] hover:text-secondary transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'
+                  }`}
               >
                 {link.name}
               </Link>
             ))}
-            <a 
+            <a
               href="tel:+97477323214"
-              className={`px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest transition-soft shadow-lg hover:shadow-premium-hover transform hover:-translate-y-1 ${
-                isScrolled ? 'bg-primary text-white' : 'bg-secondary text-primary'
-              }`}
+              className={`px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest transition-soft shadow-lg hover:shadow-premium-hover transform hover:-translate-y-1 ${isScrolled ? 'bg-primary text-white' : 'bg-secondary text-primary'
+                }`}
             >
               Call Now
             </a>
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
-            className={`lg:hidden p-3 rounded-2xl transition-colors ${
-              isScrolled ? 'text-primary bg-primary/5' : 'text-white bg-white/10'
-            }`}
+          <button
+            className={`lg:hidden p-3 rounded-2xl transition-colors ${isScrolled ? 'text-primary bg-primary/5' : 'text-white bg-white/10'
+              }`}
             onClick={() => setIsMobileMenuOpen(true)}
           >
             <Menu className="w-8 h-8" />
@@ -98,8 +94,8 @@ const Navbar = () => {
               className="fixed top-0 right-0 bottom-0 w-[85%] max-w-sm bg-primary z-[70] lg:hidden shadow-2xl flex flex-col"
             >
               <div className="p-8 flex justify-between items-center border-b border-white/5">
-                <Image src="/tuwa logo png-01.png" alt="TUWA Logo" width={140} height={50} className="brightness-0 invert object-contain" />
-                <button 
+                <Image src="/tuwa logo.png" alt="TUWA Logo" width={140} height={50} className="brightness-0 invert object-contain" />
+                <button
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="p-3 rounded-2xl bg-white/5 text-white"
                 >
@@ -110,9 +106,9 @@ const Navbar = () => {
               <div className="flex-grow overflow-y-auto p-10">
                 <div className="space-y-10">
                   {navLinks.map((link) => (
-                    <Link 
+                    <Link
                       key={link.name}
-                      href={link.href} 
+                      href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
                       className="flex items-center justify-between text-4xl font-black text-white uppercase tracking-tighter group"
                     >
@@ -144,7 +140,7 @@ const Navbar = () => {
               </div>
 
               <div className="p-10 border-t border-white/5">
-                <a 
+                <a
                   href="https://wa.me/97477323214"
                   target="_blank"
                   className="w-full bg-secondary text-primary py-6 rounded-3xl font-black text-xl flex items-center justify-center gap-3 shadow-xl uppercase tracking-widest"

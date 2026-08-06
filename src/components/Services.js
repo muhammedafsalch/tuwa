@@ -100,7 +100,13 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((srv, idx) => (
             <FadeIn key={idx} delay={idx * 0.1}>
-              <div className="group bg-white/5 rounded-4xl p-10 shadow-premium hover:shadow-premium-hover transition-soft border border-white/5 flex flex-col h-full relative overflow-hidden">
+              <div 
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="cursor-pointer group bg-white/5 rounded-4xl p-10 shadow-premium hover:shadow-premium-hover transition-soft border border-white/5 flex flex-col h-full relative overflow-hidden"
+              >
                 {/* Hover Background Accent */}
                 <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/5 rounded-bl-[100px] transition-all duration-500 group-hover:bg-secondary/10"></div>
                 
@@ -113,12 +119,15 @@ const Services = () => {
                   {srv.desc}
                 </p>
                 
-                <Link 
-                  href="#contact" 
-                  className="inline-flex items-center font-black text-secondary hover:text-white transition-colors group/link text-lg uppercase tracking-widest"
+                <button 
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="mt-auto flex items-center justify-center bg-white/10 hover:bg-secondary text-white hover:text-primary transition-all duration-300 font-bold text-sm uppercase tracking-widest py-4 px-6 rounded-xl group/btn relative z-10 w-full cursor-pointer"
                 >
-                  Explore <ChevronRight className="w-5 h-5 ml-2 group-hover/link:translate-x-2 transition-transform" />
-                </Link>
+                  Explore <ChevronRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-2 transition-transform" />
+                </button>
               </div>
             </FadeIn>
           ))}

@@ -14,10 +14,10 @@ const Hero = () => {
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden bg-primary">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <Image 
-          src="/images/qatar.jpeg" 
-          alt="TUWA Business Excellence" 
-          fill 
+        <Image
+          src="/images/qatar.jpeg"
+          alt="Company Formation Qatar - TUWA Business Excellence"
+          fill
           priority
           className="object-cover"
         />
@@ -35,27 +35,29 @@ const Hero = () => {
           <div className="flex justify-center mb-12">
             <div className="relative group">
               <div className="absolute inset-0 bg-secondary blur-[150px] opacity-20 animate-pulse"></div>
-              <Image 
-                src="/tuwa logo png-01.png" 
-                alt="TUWA Logo" 
-                width={500} 
-                height={180} 
-                className="relative z-10 brightness-0 invert object-contain w-[300px] md:w-[500px] transition-all duration-1000 group-hover:scale-105" 
+              <Image
+                src="/tuwa logo.png"
+                alt="TUWA Qatar Logo - #1 Company Formation & PRO Services"
+                width={500}
+                height={180}
+                priority={true}
+                style={{ width: 'auto', height: 'auto' }}
+                className="relative z-10 brightness-0 invert object-contain w-[300px] md:w-[500px] transition-all duration-1000 group-hover:scale-105"
               />
             </div>
           </div>
 
           <h1 className="text-5xl md:text-9xl font-black text-white leading-[0.9] mb-8 uppercase tracking-tighter">
-            Strategic <br /> <span className="text-secondary">Partnership</span>
+            Company <br /> <span className="text-secondary">Formation</span> Qatar
           </h1>
-          
+
           <p className="text-xl md:text-3xl text-gray-400 font-bold mb-16 tracking-tight max-w-3xl mx-auto leading-relaxed">
             Empowering global enterprises with premium <strong>Company formation qatar</strong>, <strong>Debt clearance services</strong>, and elite <strong>Pro services qatar</strong>.
           </p>
 
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-24">
-            <button 
+            <button
               onClick={handleWhatsAppChat}
               className="w-full sm:w-auto bg-secondary hover:bg-secondary-hover text-primary px-16 py-6 rounded-[2rem] font-black transition-all duration-500 shadow-premium hover:shadow-premium-hover transform hover:-translate-y-2 flex items-center justify-center gap-4 text-2xl uppercase tracking-widest"
             >

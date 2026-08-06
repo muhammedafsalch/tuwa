@@ -1,3 +1,5 @@
+export const dynamic = 'force-static';
+
 export default function robots() {
   return {
     rules: {
@@ -5,6 +7,6 @@ export default function robots() {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://www.tuwatranslations.com/sitemap.xml',
+    sitemap: 'https://tuwabusiness.com/sitemap.xml',
   }
 }

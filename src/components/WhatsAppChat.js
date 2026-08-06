@@ -35,7 +35,7 @@ const WhatsAppChat = () => {
             <p className="text-lg font-black text-white tracking-tight">+974 7732 3214</p>
           </div>
         </div>
-        <button 
+        <button
           onClick={handleChat}
           className="bg-secondary text-primary px-6 py-4 rounded-2xl font-black flex items-center gap-2 shadow-xl uppercase tracking-widest text-sm"
         >
@@ -54,7 +54,7 @@ const WhatsAppChat = () => {
               exit={{ opacity: 0, x: 50, scale: 0.8 }}
               className="absolute bottom-20 right-0 w-72 bg-white rounded-2xl shadow-premium p-5 border border-gray-100"
             >
-              <button 
+              <button
                 onClick={() => setShowNotification(false)}
                 className="absolute top-2 right-2 text-gray-400 hover:text-gray-600"
               >
@@ -63,7 +63,7 @@ const WhatsAppChat = () => {
               <div className="flex items-start gap-4">
                 <div className="relative shrink-0">
                   <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-primary font-bold overflow-hidden">
-                    <Image src="/tuwa logo png-01.png" alt="TUWA Business Support Qatar" width={48} height={48} className="object-cover" />
+                    <Image src="/tuwa logo.png" alt="TUWA Business Support Qatar" width={48} height={48} className="object-cover" />
                   </div>
                   <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
                 </div>
@@ -72,7 +72,7 @@ const WhatsAppChat = () => {
                   <p className="text-xs text-gray-500 mt-1">Hello! How can we help you with your business setup today?</p>
                 </div>
               </div>
-              <button 
+              <button
                 onClick={() => {
                   setIsOpen(true);
                   setShowNotification(false);
@@ -97,8 +97,8 @@ const WhatsAppChat = () => {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center relative">
-                       <Image src="/tuwa logo png-01.png" alt="TUWA Qatar Business Excellence" width={30} height={30} className="brightness-0 invert object-contain" />
-                       <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-primary rounded-full"></span>
+                      <Image src="/tuwa logo.png" alt="TUWA Qatar Business Excellence" width={30} height={30} className="brightness-0 invert object-contain" />
+                      <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-primary rounded-full"></span>
                     </div>
                     <div>
                       <p className="font-bold">TUWA Support</p>
@@ -110,7 +110,7 @@ const WhatsAppChat = () => {
                   </button>
                 </div>
               </div>
-              
+
               <div className="p-6 bg-gray-50 min-h-[150px] flex flex-col justify-end">
                 <div className="bg-white p-4 rounded-2xl rounded-bl-none shadow-sm text-sm text-gray-700 max-w-[90%]">
                   Hi there! 👋 <br />
@@ -119,7 +119,7 @@ const WhatsAppChat = () => {
               </div>
 
               <div className="p-4 bg-white border-t">
-                <button 
+                <button
                   onClick={handleChat}
                   className="w-full bg-[#25D366] text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 hover:opacity-90 transition-opacity"
                 >
@@ -130,7 +130,7 @@ const WhatsAppChat = () => {
           )}
         </AnimatePresence>
 
-        <button 
+        <button
           onClick={() => setIsOpen(!isOpen)}
           className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-premium transition-soft transform hover:scale-110 ${isOpen ? 'bg-primary' : 'bg-[#25D366]'}`}
         >

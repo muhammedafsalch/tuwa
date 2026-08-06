@@ -34,7 +34,7 @@ const About = () => {
               </p>
 
               
-              <div className="grid grid-cols-2 gap-8 mb-12">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
                 <div className="bg-white/5 p-8 rounded-3xl border border-white/10 hover:border-secondary transition-all group">
                   <div className="w-12 h-12 rounded-2xl bg-secondary text-primary flex items-center justify-center mb-6 shadow-xl group-hover:scale-110 transition-transform">
                     <Target className="w-6 h-6" />
@@ -82,9 +82,9 @@ const About = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-60"></div>
               
-              <div className="absolute bottom-12 left-12 right-12">
-                <div className="glass-dark p-10 rounded-[3rem] border border-white/10 backdrop-blur-xl">
-                   <p className="text-white text-2xl font-black uppercase tracking-tight leading-tight mb-4">
+              <div className="absolute bottom-4 left-4 right-4 sm:bottom-12 sm:left-12 sm:right-12">
+                <div className="glass-dark p-6 sm:p-10 rounded-[2rem] sm:rounded-[3rem] border border-white/10 backdrop-blur-xl">
+                   <p className="text-white text-lg sm:text-2xl font-black uppercase tracking-tight leading-tight mb-4">
                      &quot;Your success is our strategic priority.&quot;
                    </p>
                    <div className="flex items-center gap-5">
