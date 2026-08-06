@@ -48,17 +48,17 @@ export default function Navbar({ dict, locale }) {
     <>
       <header
         className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          scrolled ? "glass py-3" : "bg-transparent py-5"
+          scrolled ? "bg-white shadow-lg py-3" : "bg-transparent py-5"
         }`}
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
           <Link href={`/${locale}`} className="relative z-50 flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <div className="bg-white px-3 py-1 rounded-xl flex items-center justify-center h-14 sm:h-16 w-[150px] sm:w-[180px] overflow-hidden">
+            <div className="px-3 py-1 rounded-xl flex items-center justify-center h-14 sm:h-16 w-[150px] sm:w-[180px] overflow-hidden">
               <img 
-                src="/tuwa%20logo.png" 
+                src="/new%20tuwa%20logo.png" 
                 alt="Tuwa Business Solutions" 
-                className="w-full h-full object-contain scale-[1.35]"
+                className={`w-full h-full object-contain scale-[1.35] transition-all duration-300 ${!scrolled ? "brightness-0 invert" : ""}`}
               />
             </div>
           </Link>
@@ -69,7 +69,9 @@ export default function Navbar({ dict, locale }) {
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wide"
+                className={`transition-colors text-sm font-bold tracking-wide ${
+                  scrolled ? "text-gray-800 hover:text-primary-600" : "text-gray-200 hover:text-white"
+                }`}
               >
                 {link.name}
               </Link>
@@ -82,10 +84,12 @@ export default function Navbar({ dict, locale }) {
             <div className="relative z-50 ml-4">
               <button 
                 onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-                className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+                className={`flex items-center gap-2 transition-colors ${
+                  scrolled ? "text-gray-800 hover:text-primary-600" : "text-gray-300 hover:text-white"
+                }`}
               >
                 <Globe size={20} />
-                <span className="text-sm font-medium uppercase">{locale}</span>
+                <span className="text-sm font-bold uppercase">{locale}</span>
               </button>
               
               <AnimatePresence>
@@ -118,7 +122,7 @@ export default function Navbar({ dict, locale }) {
 
           {/* Mobile Toggle */}
           <button
-            className="lg:hidden relative z-50 p-2 text-white"
+            className={`lg:hidden relative z-50 p-2 ${scrolled ? "text-gray-900" : "text-white"}`}
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}

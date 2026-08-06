@@ -32,7 +32,7 @@ const organizationSchema = {
   "@type": "Organization",
   "name": "Tuwa Business Solutions",
   "url": "https://tuwabusiness.com",
-  "logo": "https://tuwabusiness.com/tuwa-logo.png",
+  "logo": "https://tuwabusiness.com/new%20tuwa%20logo.png",
   "description": "Your Trusted Partner for Business Setup, PRO Services & Corporate Solutions in Qatar. Specialists in Company Formation, Debt Clearance, Translation Services, and more.",
   "address": {
     "@type": "PostalAddress",

@@ -19,7 +19,7 @@ export default function Footer({ dict, locale }) {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <div className="bg-white px-3 py-1 rounded-xl flex items-center justify-center h-14 sm:h-16 w-[150px] sm:w-[180px] overflow-hidden">
                 <img 
-                  src="/tuwa%20logo.png" 
+                  src="/new%20tuwa%20logo.png" 
                   alt="Tuwa Business Solutions" 
                   className="w-full h-full object-contain scale-[1.35]"
                 />

@@ -63,7 +63,7 @@ const WhatsAppChat = () => {
               <div className="flex items-start gap-4">
                 <div className="relative shrink-0">
                   <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center text-primary font-bold overflow-hidden">
-                    <Image src="/tuwa logo.png" alt="TUWA Business Support Qatar" width={48} height={48} className="object-cover" />
+                    <Image src="/new tuwa logo.png" alt="TUWA Business Support Qatar" width={48} height={48} className="object-cover" />
                   </div>
                   <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-white rounded-full"></span>
                 </div>
@@ -97,7 +97,7 @@ const WhatsAppChat = () => {
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
                     <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center relative">
-                      <Image src="/tuwa logo.png" alt="TUWA Qatar Business Excellence" width={30} height={30} className="brightness-0 invert object-contain" />
+                      <Image src="/new tuwa logo.png" alt="TUWA Qatar Business Excellence" width={30} height={30} className="brightness-0 invert object-contain" />
                       <span className="absolute bottom-0 right-0 w-3 h-3 bg-green-500 border-2 border-primary rounded-full"></span>
                     </div>
                     <div>

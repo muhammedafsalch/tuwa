@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="relative group">
               <div className="absolute inset-0 bg-secondary blur-[150px] opacity-20 animate-pulse"></div>
               <Image
-                src="/tuwa logo.png"
+                src="/new tuwa logo.png"
                 alt="TUWA Qatar Logo - #1 Company Formation & PRO Services"
                 width={500}
                 height={180}
