@@ -1,20 +1,31 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import Button from "./ui/Button";
 
-const navLinks = [
-  { name: "Services", href: "/#services" },
-  { name: "About Us", href: "/about-us" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact" },
-];
-
-export default function Navbar() {
+export default function Navbar({ dict, locale }) {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
+
+  // Generate localized path for switching languages
+  const getLocalizedPath = (targetLocale) => {
+    if (!pathname) return `/${targetLocale}`;
+    const segments = pathname.split('/');
+    segments[1] = targetLocale;
+    return segments.join('/');
+  };
+
+  const navLinks = [
+    { name: dict?.services || "Services", href: `/${locale}/#services` },
+    { name: dict?.about_us || "About Us", href: `/${locale}/about-us` },
+    { name: dict?.blog || "Blog", href: `/${locale}/blog` },
+    { name: dict?.contact || "Contact", href: `/${locale}/contact` },
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,7 +52,7 @@ export default function Navbar() {
         }`}
       >
         <div className="container mx-auto px-6 flex justify-between items-center">
-          <Link href="/" className="relative z-50 flex items-center gap-2">
+          <Link href={`/${locale}`} className="relative z-50 flex items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <div className="bg-white px-3 py-1 rounded-xl flex items-center justify-center h-14 sm:h-16 w-[150px] sm:w-[180px] overflow-hidden">
               <img 
@@ -63,9 +74,46 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button href="/request-quote" variant="primary" className="py-2.5 px-6 text-sm">
-              Request Quote
+            <Button href={`/${locale}/request-quote`} variant="primary" className="py-2.5 px-6 text-sm">
+              {dict?.request_quote || "Request Quote"}
             </Button>
+
+            {/* Language Switcher */}
+            <div className="relative z-50 ml-4">
+              <button 
+                onClick={() => setLangDropdownOpen(!langDropdownOpen)}
+                className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
+              >
+                <Globe size={20} />
+                <span className="text-sm font-medium uppercase">{locale}</span>
+              </button>
+              
+              <AnimatePresence>
+                {langDropdownOpen && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    className="absolute right-0 mt-4 py-2 w-36 bg-[#0B1120] border border-white/10 rounded-xl shadow-2xl overflow-hidden"
+                  >
+                    {[
+                      { code: 'en', label: 'English' },
+                      { code: 'ar', label: 'العربية' },
+                      { code: 'ml', label: 'മലയാളം' }
+                    ].map((lang) => (
+                      <Link 
+                        key={lang.code}
+                        href={getLocalizedPath(lang.code)}
+                        onClick={() => setLangDropdownOpen(false)}
+                        className={`block px-4 py-2 text-sm transition-colors ${locale === lang.code ? 'text-primary-400 font-bold bg-white/5' : 'text-gray-300 hover:text-white hover:bg-white/5'}`}
+                      >
+                        {lang.label}
+                      </Link>
+                    ))}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </div>
           </nav>
 
           {/* Mobile Toggle */}

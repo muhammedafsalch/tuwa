@@ -14,6 +14,8 @@
   --color-accent-500: #A78BFA;
   
   --font-poppins: var(--font-poppins);
+  --font-anek: var(--font-anek);
+  --font-tajawal: var(--font-tajawal);
 }
 
 @tailwind base;
@@ -28,7 +30,6 @@
 body {
   background-color: #070B17 !important;
   color: #ffffff !important;
-  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }

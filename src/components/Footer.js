@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 
-export default function Footer() {
+export default function Footer({ dict, locale }) {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -26,7 +26,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Trusted. Professional. Reliable. Empowering entrepreneurs, startups, and enterprises to establish and grow in Qatar with expert corporate solutions.
+              {dict?.description || "Trusted. Professional. Reliable. Empowering entrepreneurs, startups, and enterprises to establish and grow in Qatar with expert corporate solutions."}
             </p>
             <div className="flex gap-4">
               <a href="https://www.facebook.com/tuwatranslations?mibextid=wwXIfr&rdid=w8KphFF9GGaHn1IW&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18jKzVfiWK%2F%3Fmibextid%3DwwXIfr#" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass flex items-center justify-center text-gray-300 hover:text-white hover:bg-[#1877F2] transition-all">
@@ -44,15 +44,21 @@ export default function Footer() {
           {/* Quick Links */}
           <div>
             <h4 className="text-white font-semibold mb-8 text-lg relative inline-block">
-              Quick Links
+              {dict?.quick_links || "Quick Links"}
               <span className="absolute -bottom-2 left-0 w-8 h-1 bg-primary-500 rounded-full"></span>
             </h4>
             <ul className="flex flex-col gap-4">
-              {['About Us', 'Our Process', 'Industries We Serve', 'Careers', 'Blog'].map((item) => (
-                <li key={item} className="flex items-center gap-3">
+              {[
+                { name: dict?.quick_links_about || "About Us", href: `/${locale}/about-us` },
+                { name: dict?.quick_links_process || "Our Process", href: `/${locale}/our-process` },
+                { name: dict?.quick_links_industries || "Industries We Serve", href: `/${locale}/industries-we-serve` },
+                { name: dict?.quick_links_careers || "Careers", href: `/${locale}/careers` },
+                { name: dict?.quick_links_blog || "Blog", href: `/${locale}/blog` }
+              ].map((item) => (
+                <li key={item.name} className="flex items-center gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-gray-600 shrink-0"></div>
-                  <Link href={`/${item.toLowerCase().replace(/ /g, '-')}`} className="text-gray-400 hover:text-primary-400 text-sm transition-colors">
-                    {item}
+                  <Link href={item.href} className="text-gray-400 hover:text-primary-400 text-sm transition-colors">
+                    {item.name}
                   </Link>
                 </li>
               ))}
@@ -62,20 +68,20 @@ export default function Footer() {
           {/* Services */}
           <div>
             <h4 className="text-white font-semibold mb-8 text-lg relative inline-block">
-              Our Services
+              {dict?.services_title || "Our Services"}
               <span className="absolute -bottom-2 left-0 w-8 h-1 bg-primary-500 rounded-full"></span>
             </h4>
             <ul className="flex flex-col gap-4">
               {[
-                'Business Setup Qatar',
-                'PRO Services',
-                'Certified Legal Translation',
-                'Document Attestation',
-                'Debt Recovery'
+                dict?.services_list_1 || 'Business Setup Qatar',
+                dict?.services_list_2 || 'PRO Services',
+                dict?.services_list_3 || 'Certified Legal Translation',
+                dict?.services_list_4 || 'Document Attestation',
+                dict?.services_list_5 || 'Debt Recovery'
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-gray-600 shrink-0"></div>
-                  <Link href="/services" className="text-gray-400 hover:text-primary-400 text-sm transition-colors">
+                  <Link href={`/${locale}/services`} className="text-gray-400 hover:text-primary-400 text-sm transition-colors">
                     {item}
                   </Link>
                 </li>
@@ -86,13 +92,13 @@ export default function Footer() {
           {/* Contact Info */}
           <div>
             <h4 className="text-white font-semibold mb-8 text-lg relative inline-block">
-              Contact Us
+              {dict?.contact_title || "Contact Us"}
               <span className="absolute -bottom-2 left-0 w-8 h-1 bg-primary-500 rounded-full"></span>
             </h4>
             <ul className="flex flex-col gap-5">
               <li className="flex items-start gap-3">
                 <MapPin className="text-primary-500 shrink-0 mt-0.5" size={18} />
-                <span className="text-gray-400 text-sm leading-relaxed">Matar Qadeem Street, Doha, Qatar</span>
+                <span className="text-gray-400 text-sm leading-relaxed">{dict?.address || "Matar Qadeem Street, Doha, Qatar"}</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="text-primary-500 shrink-0" size={18} />
@@ -109,10 +115,10 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-          <p>© {currentYear} Tuwa Business Solutions. All rights reserved.</p>
+          <p>© {currentYear} {dict?.rights || "Tuwa Business Solutions. All rights reserved."}</p>
           <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href={`/${locale}/privacy`} className="hover:text-white transition-colors">{dict?.privacy || "Privacy Policy"}</Link>
+            <Link href={`/${locale}/terms`} className="hover:text-white transition-colors">{dict?.terms || "Terms of Service"}</Link>
           </div>
         </div>
       </div>

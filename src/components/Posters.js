@@ -7,7 +7,7 @@ import GlassCard from "@/components/ui/GlassCard";
 
 const posters = Array.from({ length: 11 }, (_, i) => `/posters/${i + 1}.jpeg`);
 
-export default function Posters() {
+export default function Posters({ dict }) {
   const [selectedPoster, setSelectedPoster] = useState(null);
 
   useEffect(() => {
@@ -30,10 +30,10 @@ export default function Posters() {
               Our Showcase
             </h4>
             <h2 className="text-3xl lg:text-5xl font-black text-white mb-6 uppercase tracking-tight">
-              Expert <span className="text-gradient-premium">Advocacy</span> & Support
+              {dict?.badge || "Expert Advocacy & Support"}
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
-              Visualizing our core services through our professional corporate portfolio, specializing in Company formation and Translation services in Qatar.
+              {dict?.desc || "Visualizing our core services through our professional corporate portfolio, specializing in Company formation and Translation services in Qatar."}
             </p>
           </Reveal>
         </div>

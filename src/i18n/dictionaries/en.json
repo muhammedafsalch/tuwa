@@ -1,0 +1,682 @@
+{
+  "navbar": {
+    "services": "Services",
+    "about_us": "About Us",
+    "blog": "Blog",
+    "contact": "Contact",
+    "request_quote": "Request Quote"
+  },
+  "footer": {
+    "description": "Trusted. Professional. Reliable. Empowering entrepreneurs, startups, and enterprises to establish and grow in Qatar with expert corporate solutions.",
+    "quick_links": "Quick Links",
+    "services_title": "Our Services",
+    "contact_title": "Contact Us",
+    "address": "Matar Qadeem Street, Doha, Qatar",
+    "rights": "Tuwa Business Solutions. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "home": {
+    "hero": {
+      "badge": "Trusted. Professional. Reliable.",
+      "title_1": "Your Trusted Partner for",
+      "title_2": "in Qatar",
+      "desc": "Helping entrepreneurs, startups, SMEs and enterprises establish and grow their business in Qatar through professional, transparent and reliable business services.",
+      "btn_primary": "Start Your Business Today",
+      "btn_secondary": "Free Consultation"
+    },
+    "stats": {
+      "years": "Years Experience",
+      "businesses": "Businesses Served",
+      "satisfaction": "Client Satisfaction",
+      "support": "Reliable Support"
+    },
+    "services": {
+      "title": "Our Services",
+      "desc": "Comprehensive corporate solutions designed to simplify your business operations and ensure full compliance in Qatar.",
+      "s1": {
+        "title": "Business Setup",
+        "desc": "End-to-end company formation and registration services."
+      },
+      "s2": {
+        "title": "PRO Services",
+        "desc": "Government liaison and documentation processing."
+      },
+      "s3": {
+        "title": "Legal Translation",
+        "desc": "Certified legal translation for all official documents."
+      },
+      "s4": {
+        "title": "Document Attestation",
+        "desc": "Fast and reliable attestation from relevant ministries."
+      },
+      "s5": {
+        "title": "Debt Recovery",
+        "desc": "Professional and compliant debt clearance services."
+      },
+      "s6": {
+        "title": "Immigration Services",
+        "desc": "Visa processing, renewals, and labour services."
+      },
+      "btn": "View All Services",
+      "learn_more": "Learn More"
+    },
+    "why": {
+      "title": "Why Choose Tuwa",
+      "desc": "We combine deep local expertise with international standards of professionalism to deliver unmatched corporate services.",
+      "f1": "Experienced Professionals",
+      "f2": "Transparent Pricing",
+      "f3": "Fast Processing",
+      "f4": "Reliable Support",
+      "f5": "Government Expertise",
+      "f6": "End-to-End Solutions",
+      "t1": "Trust",
+      "t2": "Integrity",
+      "t3": "Reliable",
+      "t4": "Professional"
+    },
+    "core": {
+      "badge": "Core Advantage",
+      "title": "The TUWA Difference",
+      "desc": "Full Spectrum Compliance. Accelerated Delivery. Zero Hidden Costs.",
+      "btn": "Discover Our Advantages",
+      "i1": {
+        "title": "100% Secure",
+        "desc": "Legally compliant"
+      },
+      "i2": {
+        "title": "Fast Track",
+        "desc": "Accelerated setup"
+      },
+      "i3": {
+        "title": "Growth",
+        "desc": "Business expansion"
+      },
+      "i4": {
+        "title": "Expert PRO",
+        "desc": "Dedicated team"
+      }
+    },
+    "feedback": {
+      "badge": "Client Feedback",
+      "title_1": "CORPORATE",
+      "title_2": "TRUST",
+      "t1": {
+        "quote": "TUWA made our company formation in Qatar incredibly smooth. Their PRO team is exceptional.",
+        "name": "MICHAEL CHEN",
+        "title": "CEO, GLOBAL LOGISTICS"
+      },
+      "t2": {
+        "quote": "Best translation services in Doha. Their legal translations are fast and highly accurate.",
+        "name": "SARAH AHMED",
+        "title": "OPERATIONS DIRECTOR"
+      },
+      "t3": {
+        "quote": "Expert debt clearance support. They handled our complex legal settlements with total professionalism.",
+        "name": "ROBERT WILSON",
+        "title": "FOUNDER, TECHVENTURES"
+      }
+    },
+    "faq": {
+      "badge": "Support Hub",
+      "title_1": "Expert",
+      "title_2": "FAQ",
+      "items": [
+        {
+          "question": "How long does company formation in Qatar take?",
+          "answer": "Typically, business setup in Qatar takes 2-4 weeks depending on the license type and ministry approvals. Our team accelerates this for Company formation qatar by handling all bureaucracy upfront."
+        },
+        {
+          "question": "What is required for legal translation in Doha?",
+          "answer": "To begin, we need the original documents or certified true copies. Our certified legal translators will process your documents to ensure they meet all governmental and judicial standards in Qatar."
+        },
+        {
+          "question": "Can you handle debt clearance for foreign entities?",
+          "answer": "Yes, we specialize in debt recovery and clearance services for both local and foreign entities operating in Qatar, utilizing ethical and legally compliant frameworks."
+        },
+        {
+          "question": "Do you offer online Hukoomi portal support?",
+          "answer": "Absolutely. We manage all Hukoomi portal requirements, including visa processing, commercial registration renewals, and computer card updates on your behalf."
+        },
+        {
+          "question": "What are the benefits of using Pro services qatar?",
+          "answer": "Outsourcing PRO services saves you time, reduces administrative overhead, ensures 100% compliance with changing labor laws, and expedites all government-related processing."
+        },
+        {
+          "question": "How does Certificate Attestation Qatar work?",
+          "answer": "We collect your documents, process them through the relevant ministries in the country of origin, and finalize the attestation at the Ministry of Foreign Affairs (MOFA) in Qatar."
+        }
+      ]
+    },
+    "cta": {
+      "title_1": "Ready For",
+      "title_2": "Expansion?",
+      "desc": "Connect with our corporate specialists today and take the first step towards a compliant and successful business launch in Doha.",
+      "whatsapp": "WHATSAPP SUPPORT"
+    }
+  },
+  "service_details": {
+    "back_to_services": "Back to Services",
+    "our_services": "Our Services",
+    "get_quote": "Get a Quote",
+    "service_overview": "Service Overview",
+    "key_benefits": "Key Benefits",
+    "requirements": "Requirements",
+    "processing_time": "Processing Time",
+    "business_days": "Business Days",
+    "processing_note": "*Estimated time based on standard ministry processing. Some complex cases may require additional time.",
+    "contact_support": "Contact Support",
+    "req_1": "Valid Passport / QID Copies",
+    "req_2": "Commercial Registration (if applicable)",
+    "req_3": "Completed Application Forms",
+    "req_4": "Power of Attorney (if required)",
+    "ben_1": "100% Legal Compliance",
+    "ben_2": "Dedicated Account Manager",
+    "ben_3": "Fast-tracked Processing",
+    "ben_4": "Transparent Pricing Structure",
+    "ben_5": "End-to-End Handling",
+    "ben_6": "Multilingual Support",
+    "business-setup": {
+      "title": "Business Setup",
+      "desc": "Professional, reliable, and expedited business setup tailored to your specific business requirements in Qatar. Let our experts handle the complexities so you can focus on growth.",
+      "overview": "Navigating the corporate landscape in Qatar requires deep understanding of local laws, ministry regulations, and correct documentation. Our business setup services are designed to provide you with a seamless experience, ensuring 100% compliance at every step. We assign a dedicated consultant to your case who will act as your single point of contact, providing transparent updates and rapid processing times."
+    },
+    "pro-services": {
+      "title": "PRO Services",
+      "desc": "Professional, reliable, and expedited PRO services tailored to your specific business requirements in Qatar. Let our experts handle the complexities so you can focus on growth.",
+      "overview": "Navigating the corporate landscape in Qatar requires deep understanding of local laws, ministry regulations, and correct documentation. Our PRO services are designed to provide you with a seamless experience, ensuring 100% compliance at every step. We assign a dedicated consultant to your case who will act as your single point of contact, providing transparent updates and rapid processing times."
+    },
+    "legal-translation": {
+      "title": "Legal Translation",
+      "desc": "Professional, reliable, and expedited legal translation tailored to your specific business requirements in Qatar. Let our experts handle the complexities so you can focus on growth.",
+      "overview": "Navigating the corporate landscape in Qatar requires deep understanding of local laws, ministry regulations, and correct documentation. Our legal translation services are designed to provide you with a seamless experience, ensuring 100% compliance at every step. We assign a dedicated consultant to your case who will act as your single point of contact, providing transparent updates and rapid processing times."
+    },
+    "document-attestation": {
+      "title": "Document Attestation",
+      "desc": "Professional, reliable, and expedited document attestation tailored to your specific business requirements in Qatar. Let our experts handle the complexities so you can focus on growth.",
+      "overview": "Navigating the corporate landscape in Qatar requires deep understanding of local laws, ministry regulations, and correct documentation. Our document attestation services are designed to provide you with a seamless experience, ensuring 100% compliance at every step. We assign a dedicated consultant to your case who will act as your single point of contact, providing transparent updates and rapid processing times."
+    },
+    "debt-recovery": {
+      "title": "Debt Recovery",
+      "desc": "Professional, reliable, and expedited debt recovery tailored to your specific business requirements in Qatar. Let our experts handle the complexities so you can focus on growth.",
+      "overview": "Navigating the corporate landscape in Qatar requires deep understanding of local laws, ministry regulations, and correct documentation. Our debt recovery services are designed to provide you with a seamless experience, ensuring 100% compliance at every step. We assign a dedicated consultant to your case who will act as your single point of contact, providing transparent updates and rapid processing times."
+    },
+    "immigration-services": {
+      "title": "Immigration Services",
+      "desc": "Professional, reliable, and expedited immigration services tailored to your specific business requirements in Qatar. Let our experts handle the complexities so you can focus on growth.",
+      "overview": "Navigating the corporate landscape in Qatar requires deep understanding of local laws, ministry regulations, and correct documentation. Our immigration services are designed to provide you with a seamless experience, ensuring 100% compliance at every step. We assign a dedicated consultant to your case who will act as your single point of contact, providing transparent updates and rapid processing times."
+    }
+  },
+  "services_overview": {
+    "badge": "Our Expertise",
+    "title_1": "Comprehensive",
+    "title_2": "Corporate Solutions",
+    "desc": "From initial company formation to ongoing compliance and legal support, we provide everything your business needs to succeed in Qatar.",
+    "services": [
+      {
+        "slug": "business-setup",
+        "title": "Business Setup in Qatar",
+        "description": "End-to-end assistance for establishing your company, from selecting the right legal structure to acquiring commercial registrations and trade licenses."
+      },
+      {
+        "slug": "pro-services",
+        "title": "PRO & Government Liaison",
+        "description": "Expert handling of all government-related paperwork, visas, labor quotas, and immigration processes to keep your business fully compliant."
+      },
+      {
+        "slug": "legal-translation",
+        "title": "Certified Legal Translation",
+        "description": "Accurate, court-approved translation services for contracts, official documents, and legal certificates in multiple languages."
+      },
+      {
+        "slug": "document-attestation",
+        "title": "Document Attestation",
+        "description": "Streamlined attestation for educational, personal, and commercial documents from relevant ministries and embassies."
+      },
+      {
+        "slug": "debt-recovery",
+        "title": "Debt Recovery Solutions",
+        "description": "Professional and ethical debt collection services to help you recover outstanding payments and improve your cash flow."
+      },
+      {
+        "slug": "immigration-services",
+        "title": "Immigration & Visa Services",
+        "description": "Comprehensive support for family visas, work permits, and investor residencies in the State of Qatar."
+      }
+    ],
+    "learn_more": "Learn More",
+    "custom_title": "Don't see what you're looking for?",
+    "custom_desc": "Our team of experts can provide custom corporate solutions tailored to your unique requirements.",
+    "custom_btn": "Contact Us for Custom Requests"
+  },
+  "about": {
+    "hero": {
+      "badge": "About Our Company",
+      "title_1": "Your Trusted Partner for",
+      "title_2": "Business Success",
+      "desc": "At Tuwa Business Solutions, we are dedicated to simplifying the complex process of business setup and corporate compliance in Qatar. With over 10 years of experience, we provide expert guidance and reliable services to entrepreneurs, SMEs, and large enterprises."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "desc": "To empower businesses and individuals by providing seamless, transparent, and efficient corporate solutions. We strive to handle the bureaucracy and administrative hurdles so our clients can focus on what they do best: growing their business."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "desc": "To be the leading and most trusted corporate service provider in Qatar, recognized for our uncompromising integrity, innovative solutions, and exceptional client satisfaction across all industries."
+    },
+    "values": {
+      "title": "Our Core Values",
+      "desc": "The principles that guide our everyday operations and relationships with clients.",
+      "v1": "Trust",
+      "v2": "Professionalism",
+      "v3": "Reliability",
+      "v4": "Integrity",
+      "v5": "Satisfaction"
+    },
+    "team": {
+      "title": "Meet the Team Behind Your Success",
+      "desc_1": "At Tuwa Business Solutions, our dedicated team of experienced professionals is committed to delivering reliable, efficient, and customer-focused services. We work together to simplify business processes and provide practical solutions for individuals, entrepreneurs, and companies across Qatar.",
+      "desc_2": "Our team is driven by professionalism, integrity, and excellence. We understand the importance of timely service and accurate documentation, ensuring every client receives personalized support from consultation to completion.",
+      "btn": "Work With Us",
+      "roles": [
+        "Business Setup Consultants",
+        "PRO & Government Specialists",
+        "Certified Legal Translators",
+        "Document Attestation Experts",
+        "Debt Recovery Consultants",
+        "Customer Service Executives",
+        "Operations Team"
+      ]
+    },
+    "cta": {
+      "title": "Experience the Tuwa Difference",
+      "desc": "Join hundreds of satisfied businesses who have trusted us with their corporate needs in Qatar.",
+      "btn": "Get Started Now"
+    }
+  },
+  "contact": {
+    "hero": {
+      "title_1": "Let's Start a",
+      "title_2": "Conversation",
+      "desc": "Whether you need to set up a new company, require PRO services, or have a question about legal translation, our team is ready to assist you."
+    },
+    "info": {
+      "title": "Contact Information",
+      "office": "Our Office",
+      "office_val": "Matar Qadeem Street, Doha, State of Qatar",
+      "phone": "Phone & WhatsApp",
+      "email": "Email Us",
+      "hours": "Working Hours",
+      "hours_val_1": "Sat - Thu: 8:00 AM - 6:00 PM",
+      "hours_val_2": "Friday: Closed"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Full Name",
+      "name_ph": "John Doe",
+      "phone": "Phone Number",
+      "email": "Email Address",
+      "service": "Interested Service",
+      "s1": "Business Setup",
+      "s2": "PRO Services",
+      "s3": "Legal Translation",
+      "s4": "Document Attestation",
+      "s5": "Other Services",
+      "message": "Your Message",
+      "message_ph": "How can we help you?",
+      "btn": "Send Message"
+    },
+    "map": "Interactive Map Integration Placeholder"
+  },
+  "quote": {
+    "hero": {
+      "title_1": "Request a",
+      "title_2": "Custom Quote",
+      "desc": "Provide us with some details about your requirements, and our team will get back to you with a comprehensive proposal and transparent pricing."
+    },
+    "s1": {
+      "title": "Your Details",
+      "name": "Full Name *",
+      "company": "Company Name (Optional)",
+      "phone": "Phone Number *",
+      "email": "Email Address *"
+    },
+    "s2": {
+      "title": "Service Requirements",
+      "primary": "Primary Service *",
+      "select": "Select a service",
+      "o1": "Business Setup",
+      "o2": "PRO Services",
+      "o3": "Translation Services",
+      "o4": "Document Attestation",
+      "desc": "Project Description *"
+    },
+    "s3": {
+      "title": "Supporting Documents (Optional)",
+      "upload": "Click to upload or drag and drop",
+      "types": "PDF, JPG, PNG (Max 5MB)"
+    },
+    "s4": {
+      "title": "Consultation Preference (Optional)",
+      "date": "Preferred Date",
+      "time": "Preferred Time"
+    },
+    "btn": "Submit Request",
+    "terms": "By submitting this form, you agree to our Privacy Policy and Terms of Service. Your information is kept strictly confidential."
+  },
+  "blog": {
+    "badge": "Knowledge Base",
+    "title_1": "Latest",
+    "title_2": "Insights & News",
+    "desc": "Expert advice, updates, and comprehensive guides on navigating the corporate landscape in Qatar.",
+    "load_more": "Load More Articles",
+    "posts": [
+      {
+        "slug": "start-a-company-in-qatar",
+        "title": "How to Start a Company in Qatar: A Comprehensive Guide",
+        "excerpt": "Learn the step-by-step process, requirements, and legal structures available for setting up a new business in Qatar.",
+        "date": "October 12, 2026",
+        "author": "Business Setup Team",
+        "category": "Business Setup"
+      },
+      {
+        "slug": "business-licensing-guide",
+        "title": "Qatar Business Licensing Guide",
+        "excerpt": "Navigate the complex landscape of commercial registrations, trade licenses, and ministry approvals with ease.",
+        "date": "October 05, 2026",
+        "author": "PRO Department",
+        "category": "Licensing"
+      },
+      {
+        "slug": "importance-of-certified-translation",
+        "title": "The Importance of Certified Legal Translation in Qatar",
+        "excerpt": "Why professional and certified translation is crucial for your official documents, contracts, and government submissions.",
+        "date": "September 28, 2026",
+        "author": "Translation Desk",
+        "category": "Translation"
+      },
+      {
+        "slug": "document-attestation-process",
+        "title": "Demystifying the Document Attestation Process",
+        "excerpt": "A clear timeline and roadmap for getting your educational and commercial documents attested in Qatar.",
+        "date": "September 20, 2026",
+        "author": "Operations Team",
+        "category": "Attestation"
+      },
+      {
+        "slug": "debt-recovery-solutions",
+        "title": "Effective Debt Recovery Solutions for SMEs",
+        "excerpt": "Strategies and legal avenues for businesses to recover outstanding debts while maintaining professional relationships.",
+        "date": "September 15, 2026",
+        "author": "Legal Advisors",
+        "category": "Finance"
+      },
+      {
+        "slug": "moph-registration-guide",
+        "title": "MOPH Watheq Registration Guide for Medical Facilities",
+        "excerpt": "What clinics, pharmacies, and medical centers need to know about Ministry of Public Health compliance.",
+        "date": "September 02, 2026",
+        "author": "Healthcare Setup Team",
+        "category": "Healthcare"
+      }
+    ]
+  },
+  "blog_details": {
+    "content": {
+      "start-a-company-in-qatar": {
+        "title": "How to Start a Company in Qatar: A Comprehensive Guide",
+        "date": "October 12, 2026",
+        "author": "Business Setup Team",
+        "image": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c",
+        "content": "\n      <p class=\"lead text-xl text-gray-300\">Setting up a business in Qatar is a strategic move for any entrepreneur looking to tap into a rapidly growing economy, bolstered by massive infrastructure projects and a strategic location in the Middle East. This comprehensive guide covers the essential steps, documentation, and regulatory landscape required to launch your enterprise successfully.</p>\n      <h2>1. Understand the Economic Landscape and Legal Framework</h2>\n      <p>Qatar's economy is highly dynamic, transitioning rapidly from a hydrocarbon-dependent state to a diversified, knowledge-based economy aligned with the Qatar National Vision 2030. Before initiating the setup process, it's crucial to understand the Foreign Capital Investment Law, which recently underwent significant reforms. While historically, foreign investors were restricted to a maximum 49% stake in a Qatari company, recent legislative updates now allow up to 100% foreign ownership in various sectors including agriculture, manufacturing, health, education, and tourism. This opens unparalleled opportunities for 100% foreign-owned LLCs.</p>\n      <h2>2. Choose Your Business Activity</h2>\n      <p>The foundation of your company formation lies in deciding exactly what commercial activities your business will undertake. The Ministry of Commerce and Industry (MOCI) dictates a comprehensive, standardized list of approved activities. Selecting the correct activity is not just an administrative formality; it dictates your required share capital, the type of premises you must lease, and whether you require additional approvals from secondary ministries (such as the Ministry of Public Health or the Ministry of Education). Multiple activities can be listed under one commercial registration provided they are somewhat related.</p>\n      <h2>3. Select the Optimal Legal Structure</h2>\n      <p>Your choice of corporate structure impacts your liability, tax obligations, and operational flexibility. The most common structures include:</p>\n      <ul>\n         <li><strong>Limited Liability Company (LLC):</strong> The most popular vehicle for SMEs and foreign investors. It limits the liability of the partners to the extent of their share capital, safeguarding personal assets.</li>\n         <li><strong>Branch of a Foreign Company:</strong> Ideal for international corporations executing a specific government contract in Qatar. This structure does not require a local Qatari partner but is strictly limited to the scope of the awarded contract.</li>\n         <li><strong>Trade Representative Office:</strong> Used solely for market research and marketing. It cannot engage in direct sales or commercial transactions within Qatar, acting as a \"shop window\" for the parent company.</li>\n         <li><strong>Qatar Financial Centre (QFC) Entity:</strong> Offers a distinct legal and tax environment operating under English Common Law, ideal for financial, professional, and business service firms looking for 100% foreign ownership and repatriation of profits.</li>\n      </ul>\n      <h2>4. Trade Name Reservation & Commercial Registration (CR)</h2>\n      <p>Once your activity and structure are finalized, you must reserve a unique trade name. The name must comply with MOCI guidelines—it cannot contain religious references, names of countries, or inappropriate language. Upon approval, you will draft the Articles of Association (AOA), which must be printed, reviewed, and signed by all partners before the Ministry of Justice. Following this, the MOCI will issue your Commercial Registration (CR). This document acts as the official birth certificate of your company in Qatar, detailing the shareholders, authorized signatories, and approved activities.</p>\n      <blockquote>\"Partnering with an experienced corporate service provider like Tuwa Business Solutions accelerates the CR process significantly, ensuring all Arabic documentation is perfectly translated, formatted, and submitted without delay, avoiding costly rejections.\"</blockquote>\n      <h2>5. Secure Commercial Premises and the Trade License</h2>\n      <p>Unlike some jurisdictions offering \"virtual offices\", Qatar requires physical office space for almost all business types. You must secure a commercial lease that is attested by the Ministry of Municipality (Baladiya). A civil defense certificate is also mandatory, ensuring the premises meet strict fire and safety regulations. Only after these are secured can you obtain your final Trade License, permitting you to officially commence operations and put up your company signage.</p>\n      <h2>6. The Establishment Card (Computer Card)</h2>\n      <p>Issued by the Ministry of Interior, the Computer Card (or Establishment Card) grants your company the authority to act as an official sponsor in Qatar. This is a mandatory requirement if you intend to hire staff, issue residency visas, or import/export goods. Without it, your company exists legally but cannot function administratively in terms of human resources.</p>\n      <h2>Conclusion: Navigating with Experts</h2>\n      <p>While the process is highly structured, navigating the nuances of Qatari ministries requires profound local expertise, Arabic language proficiency, and an understanding of unwritten procedural nuances. Delays often stem from incorrectly translated documents or choosing the wrong business activity codes. Contact Tuwa Business Solutions today to streamline your company formation and ensure your business is built on a compliant, solid foundation designed for sustainable growth.</p>\n    "
+      },
+      "business-licensing-guide": {
+        "title": "Qatar Business Licensing Guide",
+        "date": "October 05, 2026",
+        "author": "PRO Department",
+        "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40",
+        "content": "\n      <p class=\"lead text-xl text-gray-300\">Obtaining the right licenses is critical to operating legally in Qatar. While securing a Commercial Registration (CR) is a massive milestone, it is just the beginning. True operational readiness requires municipal, immigration, and sector-specific approvals. This guide breaks down the licensing landscape in Qatar.</p>\n      <h2>The Foundational Licenses</h2>\n      <p>Every standard business in Qatar requires three foundational documents to be considered fully operational. Missing any of these will result in an inability to trade, hire, or even open a corporate bank account.</p>\n      <ul>\n        <li><strong>The Commercial Registration (CR):</strong> Issued by MOCI. This establishes the legal entity.</li>\n        <li><strong>The Trade License (Baladiya):</strong> Issued by the Ministry of Municipality. This licenses the physical premises you operate from. It confirms your office meets zoning laws and safety standards.</li>\n        <li><strong>The Establishment Card:</strong> Issued by the Ministry of Interior. This registers your company with Immigration, allowing you to sponsor expat visas.</li>\n      </ul>\n      <h2>Sector-Specific Approvals: The Real Challenge</h2>\n      <p>Depending on your industry, you will almost certainly need additional approvals from specialized government bodies. This is where the licensing process becomes highly complex and requires expert PRO navigation.</p>\n      <h3>Healthcare & Medical</h3>\n      <p>Opening a clinic, pharmacy, or importing medical equipment requires rigorous approval from the Ministry of Public Health (MoPH). You must register through the Watheq portal, have your floor plans approved by health engineers, and ensure your Medical Director holds a valid QCHP license.</p>\n      <h3>Education & Training</h3>\n      <p>Schools, nurseries, and professional training centers must be vetted and licensed by the Ministry of Education and Higher Education. Curriculums must be approved, and the physical premises face some of the strictest safety and zoning requirements in the country.</p>\n      <h3>F&B and Hospitality</h3>\n      <p>Restaurants, cafes, and hotels require specialized food safety clearances, hygiene certifications for staff, and strict Civil Defense (Fire Department) approvals for commercial kitchens.</p>\n      <h2>Maintaining Compliance: Renewals and Fines</h2>\n      <p>Licenses in Qatar are not indefinite. CRs and Trade Licenses typically require annual renewal. The Ministry of Interior is incredibly strict regarding expired Computer Cards. Failure to renew on time results in immediate automated fines, blocks on your company file (preventing you from renewing staff visas), and potential legal action against the authorized signatories.</p>\n      <blockquote>\"The biggest mistake foreign investors make is assuming licensing is a one-time event. Corporate compliance in Qatar requires a dedicated, year-round PRO strategy to track expirations and manage renewals before penalties hit.\"</blockquote>\n      <h2>Conclusion</h2>\n      <p>Navigating the licensing matrix in Qatar demands absolute precision. Utilizing an outsourced PRO service like Tuwa Business Solutions ensures your licenses are obtained swiftly and maintained proactively, keeping your business 100% compliant and penalty-free.</p>\n    "
+      },
+      "importance-of-certified-translation": {
+        "title": "The Importance of Certified Legal Translation in Qatar",
+        "date": "September 28, 2026",
+        "author": "Translation Desk",
+        "image": "https://images.unsplash.com/photo-1450101499163-c8848c66cb85",
+        "content": "\n      <p class=\"lead text-xl text-gray-300\">In Qatar, Arabic is the sole official language for all government, municipal, and judicial transactions. Therefore, highly accurate, certified legal translation is not just a convenient option—it is a strict, non-negotiable mandatory requirement for doing business and living in the country.</p>\n      <h2>What Exactly is Certified Translation?</h2>\n      <p>A certified translation in Qatar must be performed by a translator or agency that is officially recognized, tested, and approved by the Ministry of Justice and the Qatar Chamber of Commerce. The final translated document must bear a specific, registered stamp and signature confirming that the translation is a true, accurate, and legally binding reflection of the original document. Unofficial translations, no matter how accurate, are instantly rejected by government portals.</p>\n      <h2>When Do You Need Certified Translation?</h2>\n      <p>The applications for certified translation span almost every aspect of corporate and personal life for expats in Qatar:</p>\n      <ul>\n        <li><strong>Corporate Setup:</strong> Articles of Association, Board Resolutions, Powers of Attorney, and parent company incorporation certificates must all be translated into Arabic before the Ministry of Commerce and Industry will issue a Commercial Registration.</li>\n        <li><strong>Judicial and Court Proceedings:</strong> Any evidence, contract, or communication submitted to Qatari courts must be accompanied by an official Arabic translation. Judges will not review documents in English.</li>\n        <li><strong>HR and Labor Contracts:</strong> While employment contracts can be bilingual, the Arabic text always takes precedence in the event of a labor dispute at the Ministry of Labour (MADLSA).</li>\n        <li><strong>Immigration and Visas:</strong> Personal documents such as marriage certificates, university degrees, and police clearance certificates (PCC) must be translated and attested before residency visas are granted.</li>\n      </ul>\n      <h2>The Disastrous Risks of Poor Translation</h2>\n      <p>Legal translation is not literal translation. It requires an intimate understanding of both legal frameworks (the origin country and Qatar). A mistranslated legal term in a commercial contract can completely alter liability clauses, leading to severe financial losses, loss of intellectual property rights, or instant dismissal of a court case. Even a misspelled name on a translated birth certificate will halt the visa process entirely, forcing you to restart the attestation chain.</p>\n      <h2>Why Choose Tuwa for Translation?</h2>\n      <p>Our Translation Desk at Tuwa Business Solutions employs certified linguists who specialize strictly in legal, medical, and technical translation. We guarantee acceptance by all Qatari ministries, embassies, and courts, delivering flawless documents with incredibly rapid turnaround times.</p>\n    "
+      },
+      "document-attestation-process": {
+        "title": "Demystifying the Document Attestation Process",
+        "date": "September 20, 2026",
+        "author": "Operations Team",
+        "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c",
+        "content": "\n      <p class=\"lead text-xl text-gray-300\">Document attestation is the rigorous process of authenticating a document so it can be legally recognized by the Qatari government. Because Qatar is not a member of the Hague Apostille Convention, the attestation process is complex, involving multiple manual verifications across different jurisdictions.</p>\n      <h2>Understanding the Attestation Chain</h2>\n      <p>For a document issued outside of Qatar (such as a UK university degree or a US corporate board resolution) to be accepted inside Qatar, it must go through a strict, sequential chain of authentication. Skipping a step means the document is invalid.</p>\n      <ol>\n        <li><strong>Notary Public:</strong> The document must first be notarized by a registered public notary in the country where it was issued.</li>\n        <li><strong>Ministry of Foreign Affairs (Home Country):</strong> The notarized document is then authenticated by the foreign affairs department of the issuing country (e.g., the State Department in the US, or the FCDO in the UK).</li>\n        <li><strong>Qatar Embassy (Home Country):</strong> The document must then be presented to the Embassy of the State of Qatar in that specific country. The embassy verifies the home country's foreign affairs stamp and adds its own consular seal.</li>\n        <li><strong>Ministry of Foreign Affairs (Qatar):</strong> Finally, the document is brought into Qatar and physically submitted to the MOFA in Doha. MOFA verifies the Qatar Embassy stamp from the home country. Only then is the document fully attested and legal for use.</li>\n      </ol>\n      <h2>Documents that Mandate Attestation</h2>\n      <p>The attestation chain applies to both commercial and personal documents. Common examples include:</p>\n      <ul>\n        <li><strong>Educational Certificates:</strong> Degrees and diplomas are required by the Ministry of Labour to secure managerial or specialized visa titles.</li>\n        <li><strong>Civil Documents:</strong> Marriage and birth certificates are required to sponsor families for residency.</li>\n        <li><strong>Corporate Documents:</strong> Certificates of Incorporation, Memorandums of Association, and Powers of Attorney are required when a foreign company wishes to open a branch or establish a joint venture in Qatar.</li>\n      </ul>\n      <blockquote>\"A single missing stamp, or even a stamp placed on the wrong page of a document bundle, will result in immediate rejection at the final stage in Qatar, costing businesses thousands of dollars and months of lost time.\"</blockquote>\n      <h2>The Tuwa Solution</h2>\n      <p>Managing this chain across international borders is a logistical nightmare. Tuwa Business Solutions manages the entire end-to-end attestation process. Through our global network of couriers and legal agents, we collect your documents, navigate the international ministries and embassies, and deliver the final MOFA-attested documents directly to your desk in Doha.</p>\n    "
+      },
+      "debt-recovery-solutions": {
+        "title": "Effective Debt Recovery Solutions for SMEs",
+        "date": "September 15, 2026",
+        "author": "Legal Advisors",
+        "image": "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c",
+        "content": "\n      <p class=\"lead text-xl text-gray-300\">Unpaid invoices and delayed payments can severely cripple cash flow, threatening the survival of Small and Medium Enterprises (SMEs) in Qatar. In a fast-paced market, having a robust, legally sound debt recovery strategy is absolutely essential.</p>\n      <h2>The Qatari Context</h2>\n      <p>Debt recovery in Qatar requires tact, cultural understanding, and a firm grasp of the commercial legal code. Maintaining professional relationships is highly valued in the local business culture, meaning aggressive litigation should rarely be the first step. However, businesses must know how to escalate matters effectively when debtors act in bad faith.</p>\n      <h2>Phase 1: Amicable Settlement and Mediation</h2>\n      <p>We always advise clients to attempt an amicable settlement first. This involves outsourcing the collection to a professional third party (like Tuwa's legal team). The psychological impact of a debtor receiving a formal call from a corporate services firm often prompts immediate payment.</p>\n      <ul>\n        <li><strong>Skip-Tracing:</strong> Locating the debtor if they have absconded or changed offices.</li>\n        <li><strong>Formal Demand Letters:</strong> Drafting robust legal notices in both Arabic and English, outlining the debt and giving a final deadline before legal action.</li>\n        <li><strong>Negotiated Settlements:</strong> Structuring realistic payment plans if the debtor is facing genuine financial hardship, secured by post-dated cheques.</li>\n      </ul>\n      <h2>Phase 2: Navigating the Qatari Legal System</h2>\n      <p>If amicable settlement fails, filing a civil or commercial case in the Qatari courts is the next step. Having properly drafted contracts is your biggest asset here. Furthermore, in Qatar, issuing a cheque that bounces due to insufficient funds is a criminal offense, not just a civil one. A bounced cheque gives creditors massive leverage, as it can lead to travel bans and prosecution against the signatory.</p>\n      <h2>Prevention is Better than Cure</h2>\n      <p>The best debt recovery strategy is preventing bad debt in the first place. SME owners must prioritize:</p>\n      <ol>\n        <li><strong>Ironclad Contracts:</strong> Ensure payment terms, late fees, and jurisdiction clauses are clearly defined and translated into Arabic.</li>\n        <li><strong>Due Diligence:</strong> Conduct background checks and request CR copies of new clients before extending credit limits.</li>\n        <li><strong>Documentation:</strong> Always secure signed delivery notes (LPOs) and stamped invoices. A verbal agreement is incredibly difficult to enforce in court.</li>\n      </ol>\n      <p>Tuwa Business Solutions offers comprehensive debt recovery services, operating strictly within ethical frameworks and Qatari law to restore your cash flow efficiently.</p>\n    "
+      },
+      "moph-watheq-registration": {
+        "title": "MOPH Watheq Registration Guide for Medical Facilities",
+        "date": "September 02, 2026",
+        "author": "Healthcare Setup Team",
+        "image": "https://images.unsplash.com/photo-1516549655169-df83a0774514",
+        "content": "\n      <p class=\"lead text-xl text-gray-300\">The healthcare sector in Qatar is experiencing explosive growth, heavily regulated to ensure world-class patient safety and medical standards. Any medical facility—from a small dental clinic to a massive multi-specialty hospital—must successfully navigate the Ministry of Public Health (MoPH) approval processes to operate.</p>\n      <h2>What is the Watheq Portal?</h2>\n      <p>Watheq is the digital platform launched by the MoPH to streamline, digitize, and centralize the registration, licensing, and renewal of all healthcare facilities and medical professionals in Qatar. All applications, document uploads, and tracking are done exclusively through this system.</p>\n      <h2>Phase 1: Pre-Requisites and Preliminary Approvals</h2>\n      <p>Before you even touch the Watheq portal, significant groundwork is required. You must secure preliminary commercial approvals and locate a physical premise. The premises cannot be chosen randomly; it must conform to strict MoPH zoning and architectural guidelines. Furthermore, every medical facility must appoint a Medical Director who holds an active, unrestricted license from the Qatar Council for Healthcare Practitioners (QCHP).</p>\n      <h2>Phase 2: The Watheq Registration Journey</h2>\n      <p>The actual licensing process involves several strict checkpoints:</p>\n      <ul>\n        <li><strong>Architectural Review:</strong> Submitting detailed engineering floor plans for MoPH approval. They will check for proper ventilation, waste management routing, disabled access, and specific room dimensions depending on the specialty.</li>\n        <li><strong>Civil Defense Clearance:</strong> Securing specialized fire and safety approvals for medical facilities, which are more stringent than standard office spaces.</li>\n        <li><strong>Staff Credentialing:</strong> Uploading all corporate documents and verifying the medical credentials (Dataflow) of all doctors and nurses to the Watheq portal.</li>\n        <li><strong>Final Inspection:</strong> Once the facility is built out according to the approved plans and staffed, MoPH officials will conduct a rigorous physical inspection. Only upon passing this is the final operating license granted.</li>\n      </ul>\n      <h2>The Cost of Inexperience</h2>\n      <p>The MoPH standards are uncompromising. Submitting floor plans with incorrect dimensions or failing to properly classify a medical device will result in immediate rejection, forcing redesigns and costing months of rent for an unopened facility. Engaging Tuwa's specialized healthcare PRO team ensures your Watheq application is flawless, moving your clinic from concept to opening day without costly delays.</p>\n    "
+      }
+    },
+    "back": "Back to Blog",
+    "share": "Share this insight",
+    "related": "You may also like this",
+    "cta_title": "Need help with your business?",
+    "cta_desc": "Get in touch with our experts today for a free consultation and personalized roadmap for your corporate needs in Qatar.",
+    "cta_btn": "Request a Free Consultation"
+  },
+  "careers": {
+    "hero": {
+      "badge": "Join Our Team",
+      "title_1": "Build Your Career with",
+      "title_2": "Tuwa Business Solutions",
+      "desc": "We are always on the lookout for talented, driven, and passionate individuals to join our growing team of corporate experts in Qatar."
+    },
+    "openings": {
+      "title": "Current Openings",
+      "apply": "Apply below"
+    },
+    "jobs": [
+      {
+        "title": "Senior Business Consultant",
+        "department": "Consulting",
+        "location": "Doha, Qatar",
+        "type": "Full-Time",
+        "experience": "5+ Years"
+      },
+      {
+        "title": "PRO / Government Liaison Officer",
+        "department": "Operations",
+        "location": "Doha, Qatar",
+        "type": "Full-Time",
+        "experience": "3+ Years (Qatar experience required)"
+      },
+      {
+        "title": "Certified Legal Translator",
+        "department": "Translation",
+        "location": "Doha, Qatar",
+        "type": "Full-Time",
+        "experience": "5+ Years"
+      }
+    ],
+    "form": {
+      "title": "Submit Your Application",
+      "desc": "Don't see a role that fits? Submit your CV anyway, and we'll keep it on file for future opportunities.",
+      "name": "Full Name *",
+      "email": "Email Address *",
+      "position": "Position Applying For",
+      "general": "General Application",
+      "linkedin": "LinkedIn Profile URL",
+      "cv": "Upload CV / Resume *",
+      "cover": "Cover Letter",
+      "btn": "Submit Application"
+    }
+  },
+  "core_advantage": {
+    "hero": {
+      "badge": "Core Advantage",
+      "title_1": "The",
+      "title_2": "TUWA Difference",
+      "desc": "We don't just set up companies; we build strong foundations for long-term success. Discover why leading enterprises trust Tuwa Business Solutions."
+    },
+    "advantages": [
+      {
+        "title": "Full Spectrum Compliance",
+        "desc": "Comprehensive handling of formation, licensing, and ongoing PRO services in Qatar. We ensure your business is 100% compliant with all local regulations."
+      },
+      {
+        "title": "Accelerated Delivery",
+        "desc": "Proprietary workflows that drastically reduce government processing times for commercial registrations and Certificate Attestation in Qatar."
+      },
+      {
+        "title": "Zero Hidden Costs",
+        "desc": "Transparent, upfront pricing with no unexpected service charges, hidden ministry fees, or surprise bills."
+      },
+      {
+        "title": "Deep Local Insight",
+        "desc": "Over a decade of experience navigating Qatar’s unique legal, economic, and cultural landscape."
+      },
+      {
+        "title": "Priority Government Access",
+        "desc": "Our dedicated PRO team maintains a daily presence in all major ministries and departments, fast-tracking your applications."
+      },
+      {
+        "title": "Long-term Growth Support",
+        "desc": "Beyond initial setup, we provide the ongoing structural support, visa processing, and translation services needed for sustainable scaling."
+      }
+    ],
+    "cta": {
+      "title": "Experience the difference today",
+      "desc": "Partner with the most reliable corporate service provider in Qatar.",
+      "btn": "Get Started"
+    }
+  },
+  "industries": {
+    "hero": {
+      "badge": "Industry Expertise",
+      "title_1": "Industries We",
+      "title_2": "Serve",
+      "desc": "Qatar's diverse economy requires specialized knowledge. We possess deep regulatory expertise across all major sectors to ensure your business starts on a solid foundation."
+    },
+    "items": [
+      {
+        "title": "Real Estate & Construction",
+        "desc": "Navigating complex contracting regulations, engineering classifications, and property management licensing."
+      },
+      {
+        "title": "Retail & E-Commerce",
+        "desc": "Securing commercial spaces, import/export licenses, and digital payment gateway approvals."
+      },
+      {
+        "title": "Healthcare & Medical",
+        "desc": "Managing Ministry of Public Health (MoPH) approvals for clinics, pharmacies, and medical equipment suppliers."
+      },
+      {
+        "title": "Technology & IT",
+        "desc": "Setting up software development firms, IT consultancies, and cybersecurity companies in tech-zones."
+      },
+      {
+        "title": "Manufacturing & Industrial",
+        "desc": "Assisting with industrial licenses, environmental permits, and factory land allocation in industrial areas."
+      },
+      {
+        "title": "Hospitality & F&B",
+        "desc": "Handling food control approvals, municipality permits, and civil defense compliance for restaurants and cafes."
+      }
+    ],
+    "cta": {
+      "title": "Have a unique business model?",
+      "desc": "We have experience setting up highly specialized and niche companies. Let's discuss your specific requirements.",
+      "btn": "Discuss Your Project"
+    }
+  },
+  "our_process": {
+    "hero": {
+      "badge": "Streamlined Journey",
+      "title_1": "Our",
+      "title_2": "Corporate Process",
+      "desc": "We have simplified the company formation process in Qatar. From the initial idea to full operational readiness, we guide you every step of the way."
+    },
+    "steps": [
+      {
+        "title": "Initial Consultation",
+        "description": "We start by understanding your business goals and requirements to recommend the best legal structure and setup plan."
+      },
+      {
+        "title": "Documentation & Approvals",
+        "description": "Our team handles all paperwork, trade name reservations, and initial approvals from the relevant ministries."
+      },
+      {
+        "title": "Legal Structuring",
+        "description": "We draft the Articles of Association and manage the signing process to ensure legal compliance."
+      },
+      {
+        "title": "Licensing & Registration",
+        "description": "Finalizing the Commercial Registration (CR), Trade License, and Computer Card for your new entity."
+      },
+      {
+        "title": "Post-Setup Support",
+        "description": "Ongoing PRO services, visa processing, and corporate support to keep your business running smoothly."
+      }
+    ],
+    "btn": "Start Your Journey With Us"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "last_updated": "Last updated: August 2026",
+    "sections": [
+      {
+        "title": "1. Information We Collect",
+        "desc": "We collect information that you provide directly to us, such as when you create or modify your account, request on-demand services, contact customer support, or otherwise communicate with us. This information may include: name, email, phone number, postal address, profile picture, payment method, items requested, delivery notes, and other information you choose to provide."
+      },
+      {
+        "title": "2. How We Use Your Information",
+        "desc": "We may use the information we collect about you to provide, maintain, and improve our services, such as to facilitate payments, send receipts, provide products and services you request, and develop new features."
+      },
+      {
+        "title": "3. Sharing of Information",
+        "desc": "We may share the information we collect about you as described in this Statement or as described at the time of collection or sharing, including as follows: With third party Service Providers; in response to a request for information by a competent authority if we believe disclosure is in accordance with, or is otherwise required by, any applicable law, regulation, or legal process."
+      },
+      {
+        "title": "4. Contact Us",
+        "desc": "If you have any questions about this Privacy Policy, please contact us at tuwatranslations@gmail.com."
+      }
+    ]
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "last_updated": "Last updated: August 2026",
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "desc": "By accessing and using the Tuwa Business Solutions website and services, you accept and agree to be bound by the terms and provision of this agreement. In addition, when using these particular services, you shall be subject to any posted guidelines or rules applicable to such services."
+      },
+      {
+        "title": "2. Provision of Services",
+        "desc": "Tuwa Business Solutions is constantly innovating in order to provide the best possible experience for its users. You acknowledge and agree that the form and nature of the services which Tuwa provides may change from time to time without prior notice to you."
+      },
+      {
+        "title": "3. Limitation of Liability",
+        "desc": "You expressly understand and agree that Tuwa Business Solutions shall not be liable for any direct, indirect, incidental, special, consequential or exemplary damages, including but not limited to, damages for loss of profits, goodwill, use, data or other intangible losses."
+      },
+      {
+        "title": "4. Governing Law",
+        "desc": "These Terms shall be governed and construed in accordance with the laws of the State of Qatar, without regard to its conflict of law provisions."
+      }
+    ]
+  },
+  "posters": {
+    "badge": "Expert Advocacy & Support",
+    "title_1": "CORPORATE",
+    "title_2": "PORTFOLIO",
+    "desc": "Visualizing our core services through our professional corporate portfolio, specializing in Company formation and Translation services in Qatar."
+  }
+}
