@@ -12,17 +12,36 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center pt-20 overflow-hidden bg-primary">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <Image
-          src="/images/qatar.jpeg"
-          alt="Company Formation Qatar - TUWA Business Excellence"
-          fill
-          priority
-          className="object-cover"
+      {/* Animated Gradient Mesh Background */}
+      <div className="absolute inset-0 z-0 overflow-hidden bg-[#0a0514]">
+        <motion.div
+          animate={{
+            scale: [1, 1.2, 1],
+            x: [0, 100, 0],
+            y: [0, 50, 0],
+          }}
+          transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
+          className="absolute -top-[10%] -left-[10%] w-[60vw] h-[60vw] rounded-full bg-primary-600/60 blur-[100px]"
         />
-
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/40 to-primary/95"></div>
+        <motion.div
+          animate={{
+            scale: [1, 1.3, 1],
+            x: [0, -100, 0],
+            y: [0, -50, 0],
+          }}
+          transition={{ duration: 18, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          className="absolute top-[20%] -right-[10%] w-[50vw] h-[50vw] rounded-full bg-accent-500/50 blur-[100px]"
+        />
+        <motion.div
+          animate={{
+            scale: [1, 1.1, 1],
+            x: [0, 50, 0],
+            y: [0, -100, 0],
+          }}
+          transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 4 }}
+          className="absolute -bottom-[20%] left-[20%] w-[70vw] h-[70vw] rounded-full bg-blue-600/40 blur-[120px]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0514]/20 to-[#070B17] mix-blend-overlay"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 relative z-10 w-full flex flex-col items-center text-center">
@@ -98,7 +117,7 @@ const Hero = () => {
           </div>
           <div className="flex items-center gap-3 hover:text-white transition-colors cursor-pointer">
             <Mail className="w-5 h-5 text-secondary" />
-            <span className="font-bold">tuwatranslations@gmail.com</span>
+            <span className="font-bold">info@tuwabusiness.com</span>
           </div>
           <div className="hidden md:flex items-center gap-3 text-xs tracking-widest uppercase opacity-40">
             <span>Premium Business Excellence</span>

@@ -1,0 +1,41 @@
+module.exports = {
+  content: [
+    "./src/app/**/*.{js,ts,jsx,tsx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: {
+          DEFAULT: '#070B17',
+          light: '#0B1120',
+          lighter: '#111827',
+        },
+        primary: {
+          400: '#8B5CF6',
+          500: '#7C3AED',
+          600: '#6D4CFF',
+          700: '#5B5BFF',
+          DEFAULT: '#6D4CFF',
+        },
+        accent: {
+          400: '#C084FC',
+          500: '#A78BFA',
+          DEFAULT: '#A78BFA',
+        },
+      },
+      fontFamily: {
+        poppins: ['var(--font-poppins)', 'sans-serif'],
+      },
+      boxShadow: {
+        'glass': '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
+        'glow': '0 0 20px rgba(109, 76, 255, 0.5)',
+      },
+      backgroundImage: {
+        'glass-gradient': 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.01) 100%)',
+      }
+    },
+  },
+  plugins: [],
+};

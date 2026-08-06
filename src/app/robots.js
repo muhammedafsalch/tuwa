@@ -1,11 +1,10 @@
 export const dynamic = 'force-static';
-
 export default function robots() {
   return {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      disallow: ['/private/', '/api/'],
     },
     sitemap: 'https://tuwabusiness.com/sitemap.xml',
   }

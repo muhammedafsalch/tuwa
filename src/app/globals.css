@@ -1,62 +1,86 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #0A1128;        /* Deep Navy */
-  --color-primary-hover: #152C6B;
-  --color-secondary: #22D3EE;      /* Vibrant Cyan */
-  --color-secondary-hover: #0891B2;
-  --color-accent: #E0F2FE;        /* Very Light Blue */
+  --color-background: #070B17;
+  --color-background-light: #0B1120;
+  --color-background-lighter: #111827;
   
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-  --font-poppins: 'Poppins', sans-serif;
-
-  --shadow-premium: 0 20px 50px rgba(10, 17, 40, 0.3);
-  --shadow-premium-hover: 0 30px 60px rgba(10, 17, 40, 0.4);
+  --color-primary-400: #8B5CF6;
+  --color-primary-500: #7C3AED;
+  --color-primary-600: #6D4CFF;
+  --color-primary-700: #5B5BFF;
+  
+  --color-accent-400: #C084FC;
+  --color-accent-500: #A78BFA;
+  
+  --font-poppins: var(--font-poppins);
 }
-
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #1A1A1A;
+  --background: #070B17;
+  --foreground: #ffffff;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: 'Poppins', var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  background-color: #070B17 !important;
+  color: #ffffff !important;
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
 /* Glassmorphism Utilities */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-.glass-dark {
-  background: rgba(107, 63, 160, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.glass-hover {
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 40px rgba(109, 76, 255, 0.4);
+  transform: translateY(-4px);
 }
 
-/* Custom Gradients */
+/* Global Transition Override for smooth hover effects */
+.transition-all, .transition-colors, .transition-opacity, .transition-transform {
+  transition-duration: 0.6s !important;
+  transition-timing-function: cubic-bezier(0.25, 1, 0.5, 1) !important;
+}
 .bg-gradient-premium {
-  background: linear-gradient(135deg, #6B3FA0 0%, #4A2C70 100%);
+  background: linear-gradient(135deg, #5B5BFF 0%, #7C3AED 50%, #C084FC 100%);
 }
 
-.text-gradient-gold {
-  background: linear-gradient(135deg, #E65100 0%, #FFA726 100%);
+.text-gradient-premium {
+  background: linear-gradient(135deg, #8B5CF6 0%, #C084FC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.gradient-blob {
+  position: absolute;
+  filter: blur(80px);
+  z-index: -1;
+  opacity: 0.5;
+  border-radius: 50%;
+  animation: blob-bounce 10s infinite alternate;
+}
+
+@keyframes blob-bounce {
+  0% { transform: scale(1) translate(0, 0); }
+  33% { transform: scale(1.1) translate(30px, -50px); }
+  66% { transform: scale(0.9) translate(-20px, 20px); }
+  100% { transform: scale(1) translate(0, 0); }
 }
 
 /* Smooth Transitions */
@@ -66,49 +90,79 @@ body {
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar {
-  width: 10px;
-  height: 6px; /* For horizontal scrollbars */
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0A1128; /* primary */
+  background: #070B17;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #22D3EE; /* secondary */
-  border-radius: 10px;
-  border: 2px solid #0A1128;
+  background: #6D4CFF;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #0891B2; /* secondary-hover */
+  background: #7C3AED;
 }
 
-/* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #22D3EE #0A1128;
+/* Prose Typography Overrides (Since @tailwindcss/typography might not be installed) */
+.prose h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
 }
 
-/* Scrollbar Hide Utility if needed */
-.no-scrollbar::-webkit-scrollbar,
-.no-scrollbar-buttons::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar,
-.no-scrollbar-buttons {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.prose h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* Custom Scrollbar Utility */
-.custom-scrollbar::-webkit-scrollbar {
-  display: block;
-  height: 6px;
+.prose p {
+  margin-bottom: 1.5rem;
+  color: #D1D5DB; /* text-gray-300 */
+  line-height: 1.8;
+  font-size: 1.125rem; /* text-lg */
 }
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: rgba(34, 211, 238, 0.3);
+
+.prose ul, .prose ol {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+  color: #D1D5DB;
+  line-height: 1.8;
+  font-size: 1.125rem;
 }
-.custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: rgba(34, 211, 238, 0.6);
+
+.prose ul {
+  list-style-type: disc;
+}
+
+.prose ol {
+  list-style-type: decimal;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+}
+
+.prose li strong {
+  color: #ffffff;
+}
+
+.prose blockquote {
+  border-left: 4px solid #7C3AED;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem 2rem;
+  border-radius: 0 12px 12px 0;
+  margin: 2.5rem 0;
+  font-style: italic;
+  color: #E5E7EB;
+  font-size: 1.25rem;
 }

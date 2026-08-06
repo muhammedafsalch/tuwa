@@ -1,31 +1,25 @@
 import "./globals.css";
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Head from "next/head";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import WhatsAppWidget from "@/components/ui/WhatsAppWidget";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
+// Optimize Poppins loading by specifying only Latin subset and required weights
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  display: "swap", // Best for fast loading
 });
 
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "TUWA Business Services Qatar",
+  "name": "Tuwa Business Solutions",
   "url": "https://tuwabusiness.com",
-  "logo": "https://tuwabusiness.com/tuwa%20logo%20png-01.png",
-  "description": "Leading corporate service provider in Qatar. Specialists in Company Formation Qatar, Debt Clearance, Translation Services, and PRO Services Doha.",
+  "logo": "https://tuwabusiness.com/tuwa-logo.png",
+  "description": "Your Trusted Partner for Business Setup, PRO Services & Corporate Solutions in Qatar. Specialists in Company Formation, Debt Clearance, Translation Services, and more.",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Matar Qadeem Street",
@@ -35,41 +29,40 @@ const organizationSchema = {
   "contactPoint": {
     "@type": "ContactPoint",
     "telephone": "+974 7732 3214",
-    "email": "tuwatranslations@gmail.com",
+    "email": "info@tuwabusiness.com",
     "contactType": "customer service"
-  },
-  "sameAs": [
-    "https://www.facebook.com/share/18jKzVfiWK/?mibextid=wwXIfr",
-    "https://www.instagram.com/tuwa.translations?igsh=ajBjc2Y3NTkyNWNy&utm_source=qr"
-  ]
+  }
 };
 
 export const metadata = {
   metadataBase: new URL('https://tuwabusiness.com'),
-  title: "Company Formation Qatar | Debt Clearance & PRO Services | TUWA",
-  description: "Accelerate your business with TUWA Qatar. #1 experts in Company Formation Qatar, Debt clearance, Legal Translation services, PRO services, Hukoomi services, and Certificate Attestation. Trusted corporate partners in Doha.",
-  keywords: "Company formation qatar, Translation services qatar, Debt clearance qatar, Pro services qatar, Hukoomi services qatar, Certificate Attestation Qatar, Business setup Doha, Qatar company registration, PRO services Doha, Legal translation Doha",
+  title: {
+    template: "%s | Tuwa Business Solutions",
+    default: "Tuwa Business Solutions | Business Setup & PRO Services in Qatar",
+  },
+  description: "Your Trusted Partner for Business Setup, PRO Services & Corporate Solutions in Qatar. Specialists in Company Formation, Debt Clearance, Translation Services, and more.",
+  keywords: "Business Setup Qatar, Company Formation Qatar, PRO Services Qatar, Legal Translation Qatar, Document Attestation Qatar, Trade License Qatar, Business Licensing Doha, Hukoomi Portal Support",
   openGraph: {
-    title: "TUWA Qatar | Company Formation & PRO Partners",
-    description: "The premier partner for debt clearance, company formation, and legal translation in Qatar. Empowering international enterprises with elite corporate solutions.",
+    title: "Tuwa Business Solutions | Corporate Services Qatar",
+    description: "Empowering businesses in Qatar with elite corporate solutions. From setup to PRO services.",
     url: "https://tuwabusiness.com",
-    siteName: "TUWA Business Services",
-    images: [
-      {
-        url: "/images/qatar.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "TUWA Qatar Business Excellence",
-      },
-    ],
+    siteName: "Tuwa Business Solutions",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Tuwa Business Solutions Landing Page',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "TUWA Qatar | Premium Business Consulting",
+    title: "Tuwa Business Solutions | Premium Business Consulting",
     description: "Expert Company Formation and PRO Services in Doha. Start your business in Qatar today.",
-    images: ["/images/qatar.jpeg"],
+    images: ['/og-image.png'],
   },
   alternates: {
     canonical: "https://tuwabusiness.com",
@@ -77,35 +70,32 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  facebook: {
-    appId: '', // Add if available
   }
 };
-
-
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased bg-white text-gray-900 w-full`}>
+      <body className={`${poppins.variable} font-poppins antialiased bg-[#070B17] text-white w-full relative min-h-screen flex flex-col`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
         <SpeedInsights />
-        <main className="bg-transparent">
+        
+        {/* Global ambient background glow */}
+        <div className="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
+          <div className="gradient-blob bg-primary-600/20 w-[600px] h-[600px] top-[-100px] left-[-200px]" />
+          <div className="gradient-blob bg-accent-500/10 w-[800px] h-[800px] bottom-[-200px] right-[-200px] animation-delay-2000" />
+        </div>
+
+        <Navbar />
+        <main className="flex-grow">
           {children}
         </main>
+        <WhatsAppWidget />
+        <Footer />
       </body>
     </html>
   );
 }
-

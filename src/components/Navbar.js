@@ -1,160 +1,131 @@
-'use client';
+"use client";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import Button from "./ui/Button";
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone, MessageSquare, ChevronRight, MapPin, Mail, Facebook, Instagram } from 'lucide-react';
+const navLinks = [
+  { name: "Services", href: "/#services" },
+  { name: "About Us", href: "/about-us" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
+];
 
-const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'Services', href: '#services' },
-    { name: 'About', href: '#about' },
-    { name: 'Steps', href: '#steps' },
-    { name: 'Contact', href: '#contact' },
-  ];
+  // Prevent scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [mobileMenuOpen]);
 
   return (
     <>
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isScrolled ? 'shadow-premium py-4 backdrop-blur-xl bg-white/90 border-b border-gray-200/50' : 'bg-transparent py-8'
-          }`}
+        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+          scrolled ? "glass py-3" : "bg-transparent py-5"
+        }`}
       >
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
-          <Link href="/" className="relative z-10">
-            <Image
-              src="/tuwa logo.png"
-              alt="TUWA Qatar - #1 Company Formation and PRO Services Doha"
-              width={180}
-              height={60}
-              className={`transition-all duration-500 ${isScrolled ? '' : 'brightness-0 invert'} object-contain`}
-            />
-
+        <div className="container mx-auto px-6 flex justify-between items-center">
+          <Link href="/" className="relative z-50 flex items-center gap-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <div className="bg-white px-3 py-1 rounded-xl flex items-center justify-center h-14 sm:h-16 w-[150px] sm:w-[180px] overflow-hidden">
+              <img 
+                src="/tuwa%20logo.png" 
+                alt="Tuwa Business Solutions" 
+                className="w-full h-full object-contain scale-[1.35]"
+              />
+            </div>
           </Link>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center space-x-12">
+          <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className={`font-black text-sm uppercase tracking-[0.2em] hover:text-secondary transition-colors duration-300 ${isScrolled ? 'text-primary' : 'text-white'
-                  }`}
+                className="text-gray-300 hover:text-white transition-colors text-sm font-medium tracking-wide"
               >
                 {link.name}
               </Link>
             ))}
-            <a
-              href="tel:+97477323214"
-              className={`px-8 py-4 rounded-2xl font-black text-sm uppercase tracking-widest transition-soft shadow-lg hover:shadow-premium-hover transform hover:-translate-y-1 ${isScrolled ? 'bg-primary text-white' : 'bg-secondary text-primary'
-                }`}
-            >
-              Call Now
-            </a>
+            <Button href="/request-quote" variant="primary" className="py-2.5 px-6 text-sm">
+              Request Quote
+            </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Toggle */}
           <button
-            className={`lg:hidden p-3 rounded-2xl transition-colors ${isScrolled ? 'text-primary bg-primary/5' : 'text-white bg-white/10'
-              }`}
-            onClick={() => setIsMobileMenuOpen(true)}
+            className="lg:hidden relative z-50 p-2 text-white"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
-            <Menu className="w-8 h-8" />
+            {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </header>
 
-      {/* Mobile Nav Overlay (Off-canvas) */}
+      {/* Fullscreen Mobile Menu */}
       <AnimatePresence>
-        {isMobileMenuOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsMobileMenuOpen(false)}
-              className="fixed inset-0 bg-primary/80 backdrop-blur-md z-[60] lg:hidden"
-            />
-            <motion.div
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-[85%] max-w-sm bg-primary z-[70] lg:hidden shadow-2xl flex flex-col"
-            >
-              <div className="p-8 flex justify-between items-center border-b border-white/5">
-                <Image src="/tuwa logo.png" alt="TUWA Logo" width={140} height={50} className="brightness-0 invert object-contain" />
-                <button
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="p-3 rounded-2xl bg-white/5 text-white"
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0, transition: { delay: 0.5 } }}
+            className="fixed inset-0 z-40 bg-background-light flex flex-col justify-center px-6"
+          >
+            {/* Background elements for mobile menu */}
+            <div className="absolute inset-0 z-[-1] overflow-hidden">
+              <div className="gradient-blob bg-primary-600/30 w-[300px] h-[300px] top-[10%] right-[-100px]" />
+              <div className="gradient-blob bg-accent-500/20 w-[400px] h-[400px] bottom-[10%] left-[-150px] animation-delay-2000" />
+            </div>
+
+            <nav className="flex flex-col gap-6">
+              {navLinks.map((link, i) => (
+                <motion.div
+                  key={link.name}
+                  initial={{ opacity: 0, x: -50 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -50 }}
+                  transition={{ delay: 0.1 * i, duration: 0.4 }}
                 >
-                  <X className="w-8 h-8" />
-                </button>
-              </div>
-
-              <div className="flex-grow overflow-y-auto p-10">
-                <div className="space-y-10">
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.name}
-                      href={link.href}
-                      onClick={() => setIsMobileMenuOpen(false)}
-                      className="flex items-center justify-between text-4xl font-black text-white uppercase tracking-tighter group"
-                    >
-                      <span>{link.name}</span>
-                      <ChevronRight className="w-8 h-8 text-secondary opacity-0 group-hover:opacity-100 transition-all -translate-x-4 group-hover:translate-x-0" />
-                    </Link>
-                  ))}
-                </div>
-
-                <div className="mt-20 pt-10 border-t border-white/5 space-y-8">
-                  <h4 className="text-xs font-black text-white/30 uppercase tracking-[0.4em]">Connect</h4>
-                  <div className="space-y-6">
-                    <a href="tel:+97477323214" className="flex items-center gap-5 text-white">
-                      <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-secondary">
-                        <Phone className="w-6 h-6" />
-                      </div>
-                      <span className="font-black text-xl">+974 7732 3214</span>
-                    </a>
-                    <div className="flex gap-4 pt-4">
-                      <Link href="https://www.facebook.com/share/18jKzVfiWK/?mibextid=wwXIfr" target="_blank" className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-secondary">
-                        <Facebook className="w-6 h-6" />
-                      </Link>
-                      <Link href="https://www.instagram.com/tuwa.translations?igsh=ajBjc2Y3NTkyNWNy&utm_source=qr" target="_blank" className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-secondary">
-                        <Instagram className="w-6 h-6" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-10 border-t border-white/5">
-                <a
-                  href="https://wa.me/97477323214"
-                  target="_blank"
-                  className="w-full bg-secondary text-primary py-6 rounded-3xl font-black text-xl flex items-center justify-center gap-3 shadow-xl uppercase tracking-widest"
-                >
-                  <MessageSquare className="w-6 h-6" /> WhatsApp Us
-                </a>
-              </div>
-            </motion.div>
-          </>
+                  <Link
+                    href={link.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="text-4xl sm:text-5xl font-bold text-white block hover:text-primary-400 transition-colors"
+                  >
+                    {link.name}
+                  </Link>
+                </motion.div>
+              ))}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ delay: 0.1 * navLinks.length + 0.2 }}
+                className="mt-8"
+              >
+                <Button href="/request-quote" onClick={() => setMobileMenuOpen(false)} className="w-full">
+                  Request a Quote
+                </Button>
+              </motion.div>
+            </nav>
+          </motion.div>
         )}
       </AnimatePresence>
     </>
   );
-};
-
-
-export default Navbar;
+}
